@@ -3,16 +3,15 @@ h2, h3, h4, h5, h6 {
 }
 p {
     margin: 0 0 1em;
-    font-family: "Open Sans", Georgia, Helvetica, Arial, sans-serif;
     color: #3f3f3f;
-    font:400 16px/1.4 'Open Sans',sans-serif
+    font:400 16px/1.4 'Open Sans', Georgia, Helvetica, Arial, sans-serif;
 }
 a{
     color: #41BAE2;
     text-decoration: none;
 }
 .header{
-	padding:1em 0;
+	padding:0;
 	height:auto;
     background-color: #f1f1f1;
     background-image: url("../img/Topographic-Map-Pattern-7.png");
@@ -28,19 +27,19 @@ a{
 	background-size:contain;
 	background-repeat:no-repeat;
 	height:100%;
-	height:5em;
+	height:7em;
 	background-position:center center;
 	margin-top:12px;
 }
 @media (min-width: 768px){
 	.logo{
-	height:7em;
 	margin-top:14px;
 	}
 }
 .logotext{
 	height:9em;
 	display:inline-block;
+	max-width:100%;
 }
 .logotext h1{
 	display:inline-block;
@@ -246,16 +245,15 @@ nav.shift ul li a:hover:after {
   height: 0;
 }
 .overlay-main{
-	background-color:rgba(0, 0, 0, .5);
-	opacity:0.4;
-	height: auto;
-	min-height: 598px;
+	background-color:#379ad2;
+	opacity:0.7;
+	height: 100%;
 	width:100%;
 	position:absolute;
 }
 .heroImg{
   position:relative;
-	background-image: url("../img/1l.jpg");
+	background-image: url("../img/3d.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -280,7 +278,6 @@ nav.shift ul li a:hover:after {
     text-align: center;
     color: #fff;
     line-height: 1.4;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
     padding-bottom:2em;
 }
 .heroImg a{
@@ -371,6 +368,10 @@ h4.smallSection {
     -webkit-transition: opacity .25s ease;
 	-moz-transition: opacity .25s ease;
 	transition: opacity .25s ease;
+}
+.eventTip .overlay{
+
+	background-color:rgba(228, 0, 0, 0.53)
 }
 .imgWrap:hover .overlay{
 	opacity:1;
@@ -1043,7 +1044,7 @@ footer .copyright a:hover{
 }
 #mapa-cr-obrazek{
 	background-image: url("../img/mapa-cr.png"); 
-	margin: 5em; 
+	margin: 4em 0; 
 	width:470px;
 }
 .page .glyphicon-envelope, .glyphicon-earphone, .glyphicon-time {
@@ -1177,4 +1178,75 @@ font-size:0.7em;
 	background-image: url("../img/vzdelavani_gps.jpg") ; 
 	background-size:cover; 
 	background-position:center center;
+}
+.donate-wrap img{
+	position:absolute;
+}
+.donate-wrap{
+	height:20em;
+	width:100%;
+	overflow:hidden;
+	margin:2em 0;
+	margin-bottom:4em;
+	text-align: center;
+}
+.tur-pro-vsechny{
+	background-image: url("../img/turistika_provsechny.jpg") ;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.donate-text{
+	position:relative;
+	color:white;
+	text-align:center;
+	font-weight: 700;
+	border:2px solid white;
+    border-radius: 22px;
+    display: inline-block;
+    padding:0.5em 3em;
+    top:50%;
+}
+.donate-text a{
+	color:white;
+}
+.overlay-main-red{
+	background-color:#D23737;
+	opacity:0.7;
+	height: 100%;
+	width:100%;
+	position:absolute;
+}
+.overlay-main-green{
+	background-color:#2AD939;
+	opacity:0.7;
+	height: 100%;
+	width:100%;
+	position:absolute;
+}
+.overlay-main-yellow{
+	background-color:#E2D41F;
+	opacity:0.7;
+	height: 100%;
+	width:100%;
+	position:absolute;
+}
+.bezrucova-chata{
+	background-image: url("../img/chata_bezruc2.jpg") ;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.donate-kct{
+	background-image: url("../img/kct_beh.jpg") ;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.telephone-gray{
+color:#3f3f3f;
+    font:400 16px/1.4 'Open Sans', Georgia, Helvetica, Arial, sans-serif;
+}
+.telephone-gray:hover{
+text-decoration:none;
 }
