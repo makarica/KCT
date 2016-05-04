@@ -1,991 +1,1141 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-        <meta charset="utf-8">
-        <meta name="robots" content="noindex, nofollow">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
-        <meta name="description" content="Klub českých turistů nabízí turistické akce pro veřejnost ve všech krajích republiky, věnujeme se také turistickému značení, provozujeme chaty, vydáváme vlastní řadu turistických map a také časopis TURISTA.">
-        <title>Klub českých turistů | KČT</title>
-        <link rel="shortcut icon" href="img/kct.png" type="image/x-icon">
-        <!-- CSS Bootstrap -->
-        <link href="css/bootstrap.css" rel="stylesheet">
-        <!-- CSS custom -->
-        <link href="css/custom.css" rel="stylesheet">        
-        <link rel="stylesheet" href="css/bootstrap-datepicker3.css">
-        <!-- Fonts -->
-        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&subset=latin,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
-        <!-- Map -->
-        <script type="text/javascript" src="http://api4.mapy.cz/loader.js"></script>
-        <script type="text/javascript">Loader.load();</script>
-        <!-- Other meta tags -->
-        <meta name="copyright" content="2015 Klub českých turistů"> 
-        <meta name="author" content="Klub českých turistů • www.kct.cz"> 
-        <meta property="og:title" content="KČT"> 
-        <meta name="description" property="og:description" content="Klub českých turistů nabízí turistické akce pro veřejnost ve všech krajích republiky, věnujeme se také turistickému značení, provozujeme chaty, vydáváme vlastní řadu turistických map a také časopis TURISTA."> 
-        <meta property="og:type" content="article"> 
-        <meta property="og:url" content="http://www.kct.cz/"> 
-        <meta property="og:image" content="img/kct.png"> 
-        <meta property="article:publisher" content="https://www.facebook.com/kct.cz"> 
-        <meta name="twitter:site" content="@kct_cz"> 
-        <meta name="twitter:card" content="summary_large_image"> 
-        <meta name="twitter:image" content="img/kct.png">
-        <meta name="twitter:creator" content="@kct_cz"> 
-        <meta name="article:publisher" content="https://www.facebook.com/kct.cz"> 
-  </head>
-  <body>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+    <meta name="description" content="Klub českých turistů nabízí turistické akce pro veřejnost ve všech krajích republiky, věnujeme se také turistickému značení, provozujeme chaty, vydáváme vlastní řadu turistických map a také časopis TURISTA.">
+    <title>Klub českých turistů | KČT</title>
+    <link rel="shortcut icon" href="img/kct.png" type="image/x-icon">
+    <!-- CSS Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- CSS custom -->
+    <link href="css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-datepicker3.css">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&subset=latin,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+    <!-- Map -->
+    <script type="text/javascript" src="http://api4.mapy.cz/loader.js"></script>
+    <script type="text/javascript">
+    Loader.load();
+    </script>
+    <!-- Other meta tags -->
+    <meta name="copyright" content="2015 Klub českých turistů">
+    <meta name="author" content="Klub českých turistů • www.kct.cz">
+    <meta property="og:title" content="KČT">
+    <meta name="description" property="og:description" content="Klub českých turistů nabízí turistické akce pro veřejnost ve všech krajích republiky, věnujeme se také turistickému značení, provozujeme chaty, vydáváme vlastní řadu turistických map a také časopis TURISTA.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://www.kct.cz/">
+    <meta property="og:image" content="img/kct.png">
+    <meta property="article:publisher" content="https://www.facebook.com/kct.cz">
+    <meta name="twitter:site" content="@kct_cz">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="img/kct.png">
+    <meta name="twitter:creator" content="@kct_cz">
+    <meta name="article:publisher" content="https://www.facebook.com/kct.cz">
+</head>
+
+<body>
     <!-- Header -->
     <div class="container-fluid header">
-      <div class="container">
-        <!-- Header right side -->
-        <div class="col-xs-12 col-sm-5 col-md-5 col-lg-3 col-sm-push-7 col-md-push-7 col-lg-push-9 social">   
-          <!-- Social buttons --> 
-          <div class="list pull-right">
-            <div>
-                <a target="_blank" href="https://www.facebook.com/kct.cz">
-            <i class="fa fa-facebook-f fa-2x"></i>
+        <div class="container">
+            <!-- Header right side -->
+            <div class="col-xs-12 col-sm-5 col-md-5 col-lg-3 col-sm-push-7 col-md-push-7 col-lg-push-9 social">
+                <!-- Social buttons -->
+                <div class="list pull-right">
+                    <div>
+                        <a target="_blank" href="https://www.facebook.com/kct.cz">
+                            <i class="fa fa-facebook-f fa-2x"></i>
+                        </a>
+                    </div>
+                    <div>
+                        <a target="_blank" href="https://twitter.com/kct_cz">
+                            <i class="fa fa-twitter fa-2x"></i>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="mailto:kct@kct.cz">
+                            <i class="fa fa-envelope fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Logo -->
+            <a href="index.html">
+                <div class="col-xs-4 col-sm-2 col-md-2 col-lg-2 col-sm-pull-5 col-md-pull-5 col-lg-pull-3 social logo">
+                </div>
+            </a>
+            <!-- Logo-text -->
+            <div class="col-xs-8 col-sm-5 col-md-5 col-lg-7 col-sm-pull-5 col-md-pull-5 col-lg-pull-3 logotext">
+                <a href="index.html">
+                    <h1 class="logoMaintext">Klub&nbsp;českých&nbsp;turistů</h1>
+                </a>
+                <a href="index.html">
+                    <h4>Vaše dobrá značka</h4>
+                    <img src="img/znacky.png" alt="Logo značení">
                 </a>
             </div>
-            <div>
-                <a target="_blank" href="https://twitter.com/kct_cz">
-            <i class="fa fa-twitter fa-2x"></i>
-                </a>
-            </div>
-            <div>
-                <a href="mailto:kct@kct.cz">
-            <i class="fa fa-envelope fa-2x"></i>
-                </a>
-            </div>
-          </div> 
         </div>
-        <!-- Logo -->
-        <a href="index.html">
-          <div class="col-xs-4 col-sm-2 col-md-2 col-lg-2 col-sm-pull-5 col-md-pull-5 col-lg-pull-3 social logo">
-          </div>
-        </a>
-        <!-- Logo-text -->
-        <div class="col-xs-8 col-sm-5 col-md-5 col-lg-7 col-sm-pull-5 col-md-pull-5 col-lg-pull-3 logotext">
-          <a href="index.html">
-            <h1 class="logoMaintext">Klub&nbsp;českých&nbsp;turistů</h1>
-          </a>
-          <a href="index.html">
-            <h4>Vaše dobrá značka</h4>
-            <img src="img/znacky.png" alt="Logo značení">
-          </a>
-        </div>
-      </div>
     </div>
     <!-- Header End -->
     <!-- Navigation -->
     <div class="container-fluid">
-      <nav id="navbar-main" class="shift navbar-wrapper navbar-default" role="navigation">
-        <!-- hamburger -->
-        <button type="button" class="pull-right navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> 
-          <span class="sr-only">Menu</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav row">
-            <li><a href="#Akce"><b class="caret"></b> Akce</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"> O klubu</a>
-                <ul class="dropdown-menu">
-                  <li><a href="historie.html"><h5>Historie</h5></a></li>
-                  <li><a href="cinnost-klubu.html"><h5>Činnost klubu</h5></a></li>
-                  <li><a href="rady-a-sekce.html"><h5>Rady a sekce</h5></a></li>
-                  <li><a href="oblastni-rozdeleni.html"><h5>Oblastní rozdělení</h5></a></li>
-                  <li><a href="partneri.html"><h5>Partneři</h5></a></li>
-                  <li><a href="pro-media.html"><h5>Pro média</h5></a></li>
-                  <li><a href="mezinarodni-organizace.html"><h5>Mezinárodní organizace</h5></a></li>
+        <nav id="navbar-main" class="shift navbar-wrapper navbar-default" role="navigation">
+            <!-- hamburger -->
+            <button type="button" class="pull-right navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Menu</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav row">
+                    <li><a href="#Akce"><b class="caret"></b> Akce</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"> O klubu</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="historie.html"><h5>Historie</h5></a></li>
+                            <li><a href="cinnost-klubu.html"><h5>Činnost klubu</h5></a></li>
+                            <li><a href="rady-a-sekce.html"><h5>Rady a sekce</h5></a></li>
+                            <li><a href="oblastni-rozdeleni.html"><h5>Oblastní rozdělení</h5></a></li>
+                            <li><a href="partneri.html"><h5>Partneři</h5></a></li>
+                            <li><a href="pro-media.html"><h5>Pro média</h5></a></li>
+                            <li><a href="mezinarodni-organizace.html"><h5>Mezinárodní organizace</h5></a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Turistika</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="aktivity.html"><h5>Aktivity</h5></a></li>
+                            <li><a href="znaceni.html"><h5>Značení</h5></a></li>
+                            <li><a href="turisticke-mapy.html"><h5>Turistické mapy</h5></a></li>
+                            <li><a href="publikace.html"><h5>Publikace</h5></a></li>
+                            <li><a href="turisticke-chaty.html"><h5>Turistické chaty</h5></a></li>
+                            <li><a href="vzdelavani.html"><h5>Vzdělávání</h5></a></li>
+                            <li><a href="nase-projekty.html"><h5>Naše projekty</h5></a></li>
+                            <li><a href="tipy-na-vylet.html"><h5>Tipy na výlet</h5></a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Členství</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="jak-se-stat-clenem.html"><h5>Jak se stát členem</h5></a></li>
+                            <li><a href="vyhody-a-slevy.html"><h5>Výhody a slevy</h5></a></li>
+                            <li><a href="eurobeds.html"><h5>Eurobeds</h5></a></li>
+                            <li><a href="podporovatel-klubu.html"><h5>Podporovatel klubu</h5></a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Kontakty</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="kontaktni-informace.html"><h5>Kontaktní informace</h5></a></li>
+                            <li><a href="infocentrum.html"><h5>Infocentrum</h5></a></li>
+                            <li><a href="casto-kladene-otazky.html"><h5>Často kladené otázky</h5></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="http://turiblog.esy.es"> Blog »</a></li>
+                    <li><a href="http://eshop.kct.cz/"> E-shop »</a></li>
                 </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Turistika</a>
-                  <ul class="dropdown-menu">
-                <li><a href="aktivity.html"><h5>Aktivity</h5></a></li>
-                <li><a href="znaceni.html"><h5>Značení</h5></a></li>
-                <li><a href="turisticke-mapy.html"><h5>Turistické mapy</h5></a></li>
-                <li><a href="publikace.html"><h5>Publikace</h5></a></li>
-                <li><a href="turisticke-chaty.html"><h5>Turistické chaty</h5></a></li>
-                <li><a href="vzdelavani.html"><h5>Vzdělávání</h5></a></li>
-                <li><a href="nase-projekty.html"><h5>Naše projekty</h5></a></li>
-                <li><a href="tipy-na-vylet.html"><h5>Tipy na výlet</h5></a></li>
-                  </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Členství</a>
-                  <ul class="dropdown-menu">
-                <li><a href="jak-se-stat-clenem.html"><h5>Jak se stát členem</h5></a></li>
-                <li><a href="vyhody-a-slevy.html"><h5>Výhody a slevy</h5></a></li>
-                <li><a href="eurobeds.html"><h5>Eurobeds</h5></a></li>
-                <li><a href="podporovatel-klubu.html"><h5>Podporovatel klubu</h5></a></li>
-                  </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Kontakty</a>
-                  <ul class="dropdown-menu">
-                <li><a href="kontaktni-informace.html"><h5>Kontaktní informace</h5></a></li>
-                <li><a href="infocentrum.html"><h5>Infocentrum</h5></a></li>
-                <li><a href="casto-kladene-otazky.html"><h5>Často kladené otázky</h5></a></li>
-                  </ul>
-            </li>
-            <li><a href="http://turiblog.esy.es"> Blog »</a></li>
-            <li><a href="http://eshop.kct.cz/"> E-shop »</a></li>
-          </ul>
-          <!-- Right side -->
-          <ul class="nav navbar-nav navbar-right">
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-search"></i></a>
-              <ul class="dropdown-menu">
-                  <form class="form-inline"><input type="text" class="form-control" placeholder="Search">
-              <button type="submit" class="btn btn-info"><i class="glyphicon glyphicon-search"></i></button>
-                  </form>
+                <!-- Right side -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-search"></i></a>
+                        <ul class="dropdown-menu">
+                            <form class="form-inline">
+                                <input type="text" class="form-control" placeholder="Search">
+                                <button type="submit" class="btn btn-info"><i class="glyphicon glyphicon-search"></i></button>
+                            </form>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i><span class="hidden-sm hidden-md"> Login</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a arget="_blank" href="http://www.kct.cz/datovysklad/servis/login.php"><h5>Datový sklad</h5></a></li>
+                            <li><a arget="_blank" href="https://www.kct.cz/evidencekct/sign/in"><h5>Členská evidence</h5></a></li>
+                            <li><a arget="_blank" href="http://trasy.kct.cz/"><h5>Hledání značených tras</h5></a></li>
+                            <li class="divider"></li>
+                            <li><a href="http://www.kct.cz/cms/user"><h5><i class="fa fa-sign-out"></i> Login</h5></a></li>
+                        </ul>
+                    </li>
                 </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle"data-toggle="dropdown"><i class="fa fa-user"></i><span class="hidden-sm hidden-md"> Login</span></a>
-              <ul class="dropdown-menu">
-                <li><a arget="_blank" href="http://www.kct.cz/datovysklad/servis/login.php"><h5>Datový sklad</h5></a></li>
-                <li><a arget="_blank" href="https://www.kct.cz/evidencekct/sign/in"><h5>Členská evidence</h5></a></li>
-                <li><a arget="_blank" href="http://trasy.kct.cz/"><h5>Hledání značených tras</h5></a></li>
-                <li class="divider"></li>
-                <li><a href="http://www.kct.cz/cms/user"><h5><i class="fa fa-sign-out"></i> Login</h5></a></li>
-               </ul>
-            </li>
-          </ul><!-- /.navbar-collapse -->
-        </div>
-      </nav>
+                <!-- /.navbar-collapse -->
+            </div>
+        </nav>
     </div>
     <!-- Navigation End -->
     <!-- Main image -->
     <div class="container-fluid heroImg">
-      <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 col-sm-push-1 col-md-push-2 col-lg-push-3">
-        <p>Klub českých turistů nabízí zájemcům o turistiku a&nbsp;pobyt v přírodě celoroční turistický a&nbsp;sportovní program. Naším hlavním cílem je vytvářet podmínky pro realizaci různých turistických aktivit a&nbsp;poznávání turistických zajímavostí v celé&nbsp;ČR.</br>Klub má přes 33&nbsp;tisíc členů, z toho cca&nbsp;9&nbsp;tisíc v turistických oddílech mládeže <a href="http://www.a-tom.cz">TOM</a>. Základní články klubu tvoří 450&nbsp;<a href="obla_rozdeleni.html">odborů</a> ve všech krajích&nbsp;ČR. Členové KČT připraví každoročně přes 1500&nbsp;veřejně přístupných akcí a značkaři KČT obnoví cca&nbsp;15&nbsp;tisíc&nbsp;km značených tras.</br>Vydáváme <a href="mapy.html">turistické mapy</a>, časopis&nbsp;<a href="publikace.html">Turista</a>, <a href="publikace.html">Obrazový atlas turistických cílů</a> a provozujeme síť <a href="chaty.html">turistických chat</a>. Vyberte si podle času a zájmu aktivitu v <a href="akce.html">kalendáři akcí</a> a zapojte se kdykoliv v průběhu roku. <a href="clenstvi.html">Členům</a> navíc poskytujeme výhody a slevy v rámci systémů <a href="eurobeds.html">Eurobeds</a> a <a href="clenstvi.html">Sphere</a>.
-        </p>
-      </div>
+        <div class="overlay-main"></div>
+        <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 col-sm-push-1 col-md-push-2 col-lg-push-3">
+            <p>Klub českých turistů nabízí zájemcům o turistiku a&nbsp;pobyt v přírodě celoroční turistický a&nbsp;sportovní program. Naším hlavním cílem je vytvářet podmínky pro realizaci různých turistických aktivit a&nbsp;poznávání turistických zajímavostí v celé&nbsp;ČR.</br>Klub má přes 33&nbsp;tisíc členů, z toho cca&nbsp;9&nbsp;tisíc v turistických oddílech mládeže <a href="http://www.a-tom.cz">TOM</a>. Základní články klubu tvoří 450&nbsp;<a href="obla_rozdeleni.html">odborů</a> ve všech krajích&nbsp;ČR. Členové KČT připraví každoročně přes 1500&nbsp;veřejně přístupných akcí a značkaři KČT obnoví cca&nbsp;15&nbsp;tisíc&nbsp;km značených tras.</br>Vydáváme <a href="mapy.html">turistické mapy</a>, časopis&nbsp;<a href="publikace.html">Turista</a>, <a href="publikace.html">Obrazový atlas turistických cílů</a> a provozujeme síť <a href="chaty.html">turistických chat</a>. Vyberte si podle času a zájmu aktivitu v <a href="akce.html">kalendáři akcí</a> a zapojte se kdykoliv v průběhu roku. <a href="clenstvi.html">Členům</a> navíc poskytujeme výhody a slevy v rámci systémů <a href="eurobeds.html">Eurobeds</a> a <a href="clenstvi.html">Sphere</a>.
+            </p>
+        </div>
     </div>
     <!-- Main Image End -->
-    <!-- Partners --> 
+    <!-- Partners -->
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 logoPanel">
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-push-2">
-          <h4 class="smallSection">podporují nás</h4>
-          <div class="col-xs-4 col-sm-2 col-md-2 col-lg-2 itemLogo">
-              <a href="#"><img src="img/main_logo_lesy.png" class="img responsive" alt="Lesy ČR"></a>
-          </div>
-          <div class="col-xs-7 col-sm-3 col-md-3 col-lg-3 itemLogo">
-              <a href="#"><img src="img/main_logo_cs.png" class="img responsive" alt="Česká spořitelna"></a>
-          </div> 
-          <div class="col-xs-4 col-sm-2 col-md-2 col-lg-2 itemLogo">
-              <a href="#"><img src="img/main_logo_cd.gif" class="img responsive" alt="České dráhy"></a>
-          </div>
-          <div class="col-xs-4 col-sm-2 col-md-3 col-lg-3 itemLogo">
-              <a href="#"><img src="img/main_logo_ozp.gif" class="img responsive" alt="Oborová zdravotní pojišťovna"></a>
-          </div>
-          <div class="col-xs-4 col-sm-2 col-md-2 col-lg-2 itemLogo">
-              <a href="#"><img src="img/main_logo_author.gif" class="img responsive" alt="Author"></a>
-          </div>  
-      </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-push-2">
+            <h4 class="smallSection">podporují nás</h4>
+            <div class="col-xs-4 col-sm-2 col-md-2 col-lg-2 itemLogo">
+                <a href="#"><img src="img/main_logo_lesy.png" class="img responsive" alt="Lesy ČR"></a>
+            </div>
+            <div class="col-xs-7 col-sm-3 col-md-3 col-lg-3 itemLogo">
+                <a href="#"><img src="img/main_logo_cs.png" class="img responsive" alt="Česká spořitelna"></a>
+            </div>
+            <div class="col-xs-4 col-sm-2 col-md-2 col-lg-2 itemLogo">
+                <a href="#"><img src="img/main_logo_cd.gif" class="img responsive" alt="České dráhy"></a>
+            </div>
+            <div class="col-xs-4 col-sm-2 col-md-3 col-lg-3 itemLogo">
+                <a href="#"><img src="img/main_logo_ozp.gif" class="img responsive" alt="Oborová zdravotní pojišťovna"></a>
+            </div>
+            <div class="col-xs-4 col-sm-2 col-md-2 col-lg-2 itemLogo">
+                <a href="#"><img src="img/main_logo_author.gif" class="img responsive" alt="Author"></a>
+            </div>
+        </div>
     </div>
     <!-- Event tips -->
     <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 eventTip">
-            <a href="akce.html">
-                <div  class="imgWrap" style="background-image: url(img/tipy_certovsky.jpg)">
-                  <div class="overlay"></div>
-                  <div class="tipWrap">
-                    <h2>Do Křivoklátských lesů</h2>
-                    <h4>28. června, Kladno</h4>    
-                  </div>  
-                </div>
-            </a>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 eventTip">
+                <a href="akce.html">
+                    <div class="imgWrap" style="background-image: url(img/tipy_certovsky.jpg)">
+                        <div class="overlay"></div>
+                        <div class="tipWrap">
+                            <h2>Do Křivoklátských lesů</h2>
+                            <h4>28. června, Kladno</h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 eventTip">
+                <a href="akce.html">
+                    <div class="imgWrap" style="background-image: url(img/tipy_zamykani.jpg)">
+                        <div class="overlay"></div>
+                        <div class="tipWrap">
+                            <h2>Jarní výstup s Emou na Emu</h2>
+                            <h4>5. července, Ostrava</h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="hidden-xs hidden-sm col-md-4 col-lg-4 eventTip">
+                <a href="akce.html">
+                    <div class="imgWrap" style="background-image: url(img/tipy_citka2.jpg)">
+                        <div class="overlay"></div>
+                        <div class="tipWrap">
+                            <h2>Pochod okolo Václavovic</h2>
+                            <h4>15. července, Ostrava</h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 eventTip">
-            <a href="akce.html">
-                <div class="imgWrap" style="background-image: url(img/tipy_zamykani.jpg)">
-                  <div class="overlay"></div>
-                  <div class="tipWrap">
-                    <h2>Jarní výstup s Emou na Emu</h2>
-                    <h4>5. července, Ostrava</h4>
-                  </div>
-                </div>
-            </a>
-        </div>
-        <div class="hidden-xs hidden-sm col-md-4 col-lg-4 eventTip">
-            <a href="akce.html">
-                <div class="imgWrap" style="background-image: url(img/tipy_citka2.jpg)">
-                  <div class="overlay"></div>
-                  <div class="tipWrap">
-                    <h2>Pochod okolo Václavovic</h2>
-                    <h4>15. července, Ostrava</h4>
-                  </div>
-                </div>
-            </a>
-        </div>
-      </div>
     </div>
     <!-- /Event tips -->
     <!-- News -->
-    <div class="container"> 
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 news"> 
-          <div class="articles">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-sm-push-0 noGutter">
-              <a href="clanek.html">
-                <div class="article">
-                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 articleImg1">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 news">
+                <div class="articles">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-sm-push-0 noGutter">
+                        <a href="clanek.html">
+                            <div class="article">
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 articleImg1">
+                                </div>
+                                <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 articleContent">
+                                    <h3>Pozvánka na oslavu "ostravského Foglara" Karla Líby, osobnosti Moravskoslezské turistiky</h3>
+                                    <h5 class="hidden-xs">10. listopadu 2015</h5>
+                                    <p class="hidden-xs">Do dnešního dne prošlo organizací Centrum pro volný čas a pomoc mládeži z. s. několik tisíců ostravské mládeže. V letošním roce slaví 70 let své nepřetržité činnosti, v sobotu 21. listopadu 2015.</p>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 articleContent">
-                      <h3>Pozvánka na oslavu "ostravského Foglara" Karla Líby, osobnosti Moravskoslezské turistiky</h3>
-                      <h5 class="hidden-xs">10. listopadu 2015</h5>
-                      <p class="hidden-xs">Do dnešního dne prošlo organizací Centrum pro volný čas a pomoc mládeži z. s. několik tisíců ostravské mládeže. V letošním roce slaví 70 let své nepřetržité činnosti, v sobotu 21. listopadu 2015.</p>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-sm-push-0 noGutter">
+                        <a href="clanek.html">
+                            <div class="article">
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 articleImg2">
+                                </div>
+                                <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 articleContent">
+                                    <h3>Mezinárodní mistrovství v Turistickém závodě 2015</h3>
+                                    <h5 class="hidden-xs">1. října 2015</h5>
+                                    <p class="hidden-xs">Letošní sezona turistického závodění nám vyvrcholila 12. září 2015 na severu Čech. Na Šluknovsku v Mikulášovicích se běžel za mezinárodní účasti poslední mistrovský závod jednotlivců v tomto roce.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-sm-push-0 noGutter">
+                        <a href="clanek.html">
+                            <div class="article">
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 articleImg3">
+                                </div>
+                                <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 articleContent">
+                                    <h3>Od září můžete v Infocentru i v e-shopu KČT platit kartou</h3>
+                                    <h5 class="hidden-xs">30. září 2015</h5>
+                                    <p class="hidden-xs">Už žádné starosti, zda u sebe máte dostatečnou hotovost! Od září můžete v Infocentru KČT využít platby kartou. Platit kartou můžete také na našem e-shopu. Přijímáme platební karty Visa, Maestro, Mastercard A V-Pay.</p>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
-              </a>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-sm-push-0 noGutter">
-              <a href="clanek.html">
-                <div class="article">
-                  <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 articleImg2">
-                  </div>
-                  <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 articleContent">
-                      <h3>Mezinárodní mistrovství v Turistickém závodě 2015</h3>
-                      <h5 class="hidden-xs">1. října 2015</h5>
-                      <p class="hidden-xs">Letošní sezona turistického závodění nám vyvrcholila 12. září 2015 na severu Čech. Na Šluknovsku v Mikulášovicích se běžel za mezinárodní účasti poslední mistrovský závod jednotlivců v tomto roce.</p>
-                  </div>
+            <!-- News & Newsletter sidebar -->
+            <div class="col-xs-10 col-sm-6 col-md-4 col-lg-4 col-xs-push-1 col-sm-push-0 newsletterBox">
+                <h4>NOVINKY DO VAŠÍ E-MAILOVÉ SCHRÁNKY</h4>
+                <h5>Každý měsíc přehled akcí a tipů na výlety po celé ČR.<br>Klubové aktuality i informace o nových vydáních map a publikací ze světa turistiky.</h5>
+                <div class="input-group">
+                    <input type="text" class="form-control" aria-label="..." placeholder="Váš email..." data-placement="top" data-trigger="manual" data-content="Nesprávná adresa, zkontrolujte si ji prosím.">
+                    <div class="input-group-btn">
+                        <button type="submit" class="btn btn-info btn-default" aria-haspopup="true" aria-expanded="false">Chci newsletter</button>
+                        <p class="help-block pull-left text-danger hide" id="form-error">&nbsp; Zkontrolujte své údaje. </p>
+                    </div>
                 </div>
-              </a>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-sm-push-0 noGutter">
-              <a href="clanek.html">
-                <div class="article">
-                  <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 articleImg3">
-                  </div>
-                  <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 articleContent">
-                    <h3>Od září můžete v Infocentru i v e-shopu KČT platit kartou</h3>
-                    <h5 class="hidden-xs">30. září 2015</h5>
-                    <p class="hidden-xs">Už žádné starosti, zda u sebe máte dostatečnou hotovost! Od září můžete v Infocentru KČT využít platby kartou. Platit kartou můžete také na našem e-shopu. Přijímáme platební karty Visa, Maestro, Mastercard A V-Pay.</p>
-                  </div>
-                </div>
-              </a>
+            <div class="col-xs-10 col-sm-6 col-md-4 col-lg-4 col-xs-push-1 col-sm-push-0 advert">
+                <a href="http://www.bezrucovachata.cz/">
+                    <img src="img/bezruc.jpg" alt="Bezručova chata sbírka" width="100%" height="auto">
+                </a>
             </div>
-          </div>
         </div>
-        <!-- News & Newsletter sidebar -->
-        <div class="col-xs-10 col-sm-6 col-md-4 col-lg-4 col-xs-push-1 col-sm-push-0 newsletterBox">
-          <h4>NOVINKY DO VAŠÍ E-MAILOVÉ SCHRÁNKY</h4>
-          <h6>Každý měsíc přehled akcí a tipů na výlety po celé ČR.<br>Klubové aktuality i informace o nových vydáních map a publikací ze světa turistiky.</h6>
-          <div class="input-group">
-            <input type="text" class="form-control" aria-label="..." placeholder="Váš email..." data-placement="top" data-trigger="manual" data-content="Nesprávná adresa, zkontrolujte si ji prosím.">
-            <div class="input-group-btn">
-              <button type="submit" class="btn btn-info btn-default" aria-haspopup="true" aria-expanded="false">Chci newsletter</button> <p class="help-block pull-left text-danger hide" id="form-error">&nbsp; Zkontrolujte své údaje. </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-10 col-sm-6 col-md-4 col-lg-4 col-xs-push-1 col-sm-push-0 advert">
-          <a href="http://www.bezrucovachata.cz/" >
-          <img src="img/bezruc.jpg"  alt="Bezručova chata sbírka" width="100%" height="auto">
-          </a>
-        </div>
-      </div>
     </div>
     <!-- /News -->
     <!-- Infografiky -->
     <div class="container-fluid">
-      <div class="hidden-xs col-sm-12 col-md-12 col-lg-12 activities">
-        <div class="container">
-          <h3 class="mainSection">Čemu se věnujeme?</h3>
-          <div class="hidden-xs col-sm-12 col-md-12 col-lg-12 noGutter">
-            <div class="col-sm-2 col-md-2 col-lg-2 noGutter" >
-              <a href="aktivity.html#hipoturistika">
-              <img src="img/i_hipo.png" alt="Hipoturistika" class="img-responsive item">
-              </a>
+        <div class="hidden-xs col-sm-12 col-md-12 col-lg-12 activities">
+            <div class="container">
+                <h3 class="mainSection">Čemu se věnujeme?</h3>
+                <div class="hidden-xs col-sm-12 col-md-12 col-lg-12 noGutter">
+                    <div class="col-sm-2 col-md-2 col-lg-2 noGutter">
+                        <a href="aktivity.html#hipoturistika">
+                            <img src="img/i_hipo.png" alt="Hipoturistika" class="img-responsive item">
+                        </a>
+                    </div>
+                    <div class="col-sm-2 col-md-2 col-lg-2 noGutter">
+                        <a href="aktivity.html#cykloturistika">
+                            <img src="img/i_kolo.png" alt="Cykloturistika" class="img-responsive item">
+                        </a>
+                    </div>
+                    <div class="col-sm-2 col-md-2 col-lg-2 noGutter">
+                        <a href="aktivity.html#vysokohorska_turistika">
+                            <img src="img/i_hory.png" alt="Vysokohorská turistika" class="img-responsive item">
+                        </a>
+                    </div>
+                    <div class="col-sm-2 col-md-2 col-lg-2 noGutter">
+                        <a href="aktivity.html#bezecka_turistika">
+                            <img src="img/i_beh.png" alt="Běžecká turistika" class="img-responsive item">
+                        </a>
+                    </div>
+                    <div class="col-sm-2 col-md-2 col-lg-2 noGutter">
+                        <a href="chaty.html">
+                            <img src="img/i_chaty.png" alt="Chaty KČT" class="img-responsive item">
+                        </a>
+                    </div>
+                    <div class="col-sm-2 col-md-2 col-lg-2 noGutter">
+                        <a href="mapy.html">
+                            <img src="img/i_mapy.png" alt="Mapy KČT" class="img-responsive item">
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden-xs col-sm-12 col-md-12 col-lg-12 noGutter">
+                    <h4 class="collapseButton" data-toggle="collapse" data-target="#acts">Zobrazit všechny aktivity <span class="glyphicon glyphicon-menu-down arrow" aria-hidden="true"></span></h4>
+                    <div id="acts" class="collapse">
+                        <div class="col-sm-2 col-md-2 col-lg-2 noGutter">
+                            <a href="znaceni.html">
+                                <img src="img/i_značky2.png" alt="Značení" class="img-responsive item">
+                            </a>
+                        </div>
+                        <div class="col-sm-2 col-md-2 col-lg-2 noGutter">
+                            <a href="aktivity.html#vykonnostni_turistika">
+                                <img src="img/i_vykon.png" alt="Výkonnostní turistika" class="img-responsive item">
+                            </a>
+                        </div>
+                        <div class="col-sm-2 col-md-2 col-lg-2 noGutter">
+                            <a href="aktivity.html#lyzarska_turistika">
+                                <img src="img/i_lyze.png" alt="Lyžařská turistika" class="img-responsive item">
+                            </a>
+                        </div>
+                        <div class="col-sm-2 col-md-2 col-lg-2 noGutter">
+                            <a href="aktivity.html#mototuristika">
+                                <img src="img/i_moto.png" alt="Mototuristika" class="img-responsive item">
+                            </a>
+                        </div>
+                        <div class="col-sm-2 col-md-2 col-lg-2 noGutter">
+                            <a href="aktivity.html#turistika_naboso">
+                                <img src="img/i_naboso.png" alt="Turistika naboso" class="img-responsive item">
+                            </a>
+                        </div>
+                        <div class="col-sm-2 col-md-2 col-lg-2 noGutter">
+                            <a href="aktivity.html#pesi_turistika">
+                                <img src="img/i_pesi.png" alt="Pěší turistika" class="img-responsive item">
+                            </a>
+                        </div>
+                        <div class="col-sm-2 col-md-2 col-lg-2 noGutter">
+                            <a href="aktivity.html#speleoturistika">
+                                <img src="img/i_speleo.png" alt="Speleoturistika" class="img-responsive item">
+                            </a>
+                        </div>
+                        <div class="col-sm-2 col-md-2 col-lg-2 noGutter">
+                            <a href="aktivity.html#turistika_zdp">
+                                <img src="img/i_zdp2.png" alt="Turistika ZDP" class="img-responsive item">
+                            </a>
+                        </div>
+                        <div class="col-sm-2 col-md-2 col-lg-2 noGutter">
+                            <a href="aktivity.html#rodinna_turistika">
+                                <img src="img/i_kocar2.png" alt="Rodinná turistika" class="img-responsive item">
+                            </a>
+                        </div>
+                        <div class="col-sm-2 col-md-2 col-lg-2 noGutter">
+                            <a href="aktivity.html#zimni_taboreni">
+                                <img src="img/i_taboreni.png" alt="Zimní táboření" class="img-responsive item">
+                            </a>
+                        </div>
+                        <div class="col-sm-2 col-md-2 col-lg-2 noGutter">
+                            <a href="aktivity.html#vodni_turistika">
+                                <img src="img/i_voda.png" alt="Vodní turistika" class="img-responsive item">
+                            </a>
+                        </div>
+                        <div class="col-sm-2 col-md-2 col-lg-2 noGutter">
+                            <a href="aktivity.html#turistika_mladeze">
+                                <img src="img/i_mladez.png" alt="Turistika mládeže" class="img-responsive item">
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-sm-2 col-md-2 col-lg-2 noGutter" >
-              <a href="aktivity.html#cykloturistika">
-                <img src="img/i_kolo.png" alt="Cykloturistika" class="img-responsive item">
-              </a>
-            </div>
-            <div class="col-sm-2 col-md-2 col-lg-2 noGutter" >
-              <a href="aktivity.html#vysokohorska_turistika">
-                <img src="img/i_hory.png" alt="Vysokohorská turistika" class="img-responsive item">
-              </a>
-            </div>
-            <div class="col-sm-2 col-md-2 col-lg-2 noGutter" >
-              <a href="aktivity.html#bezecka_turistika">
-                <img src="img/i_beh.png" alt="Běžecká turistika" class="img-responsive item">
-              </a>
-            </div>
-            <div class="col-sm-2 col-md-2 col-lg-2 noGutter" >
-              <a href="chaty.html">
-                <img src="img/i_chaty.png" alt="Chaty KČT" class="img-responsive item">
-              </a>
-            </div>
-            <div class="col-sm-2 col-md-2 col-lg-2 noGutter" >
-              <a href="mapy.html">
-                <img src="img/i_mapy.png" alt="Mapy KČT" class="img-responsive item">
-              </a>
-            </div>
-          </div>
-          <div class="hidden-xs col-sm-12 col-md-12 col-lg-12 noGutter">
-            <h4 class="collapseButton" data-toggle="collapse" data-target="#acts">Zobrazit všechny aktivity <span class="glyphicon glyphicon-menu-down arrow" aria-hidden="true"></span></h4>
-            <div id="acts" class="collapse">
-              <div class="col-sm-2 col-md-2 col-lg-2 noGutter" >
-                <a href="znaceni.html">
-                  <img src="img/i_značky2.png" alt="Značení" class="img-responsive item">
-                </a>
-              </div>
-              <div class="col-sm-2 col-md-2 col-lg-2 noGutter" >
-                <a href="aktivity.html#vykonnostni_turistika">
-                  <img src="img/i_vykon.png" alt="Výkonnostní turistika" class="img-responsive item">
-                </a>
-              </div>
-              <div class="col-sm-2 col-md-2 col-lg-2 noGutter" >
-                <a href="aktivity.html#lyzarska_turistika">
-                  <img src="img/i_lyze.png" alt="Lyžařská turistika" class="img-responsive item">
-                </a>
-              </div>
-              <div class="col-sm-2 col-md-2 col-lg-2 noGutter" >
-                <a href="aktivity.html#mototuristika">
-                  <img src="img/i_moto.png" alt="Mototuristika" class="img-responsive item">
-                </a>
-              </div>
-              <div class="col-sm-2 col-md-2 col-lg-2 noGutter" >
-                <a href="aktivity.html#turistika_naboso">
-                  <img src="img/i_naboso.png" alt="Turistika naboso" class="img-responsive item">
-                </a>
-              </div>
-              <div class="col-sm-2 col-md-2 col-lg-2 noGutter" >
-                <a href="aktivity.html#pesi_turistika">
-                  <img src="img/i_pesi.png" alt="Pěší turistika" class="img-responsive item">
-                </a>
-              </div>
-              <div class="col-sm-2 col-md-2 col-lg-2 noGutter" >
-                <a href="aktivity.html#speleoturistika">
-                  <img src="img/i_speleo.png" alt="Speleoturistika" class="img-responsive item">
-                </a>
-              </div>
-              <div class="col-sm-2 col-md-2 col-lg-2 noGutter" >
-                <a href="aktivity.html#turistika_zdp">
-                  <img src="img/i_zdp2.png" alt="Turistika ZDP" class="img-responsive item">
-                </a>
-              </div>
-              <div class="col-sm-2 col-md-2 col-lg-2 noGutter" >
-                <a href="aktivity.html#rodinna_turistika">
-                  <img src="img/i_kocar2.png" alt="Rodinná turistika" class="img-responsive item">
-                </a>
-              </div>
-              <div class="col-sm-2 col-md-2 col-lg-2 noGutter" >
-                <a href="aktivity.html#zimni_taboreni">
-                  <img src="img/i_taboreni.png" alt="Zimní táboření" class="img-responsive item">
-                </a>
-              </div>
-              <div class="col-sm-2 col-md-2 col-lg-2 noGutter" >
-                <a href="aktivity.html#vodni_turistika">
-                  <img src="img/i_voda.png" alt="Vodní turistika" class="img-responsive item">
-                </a>
-              </div>
-              <div class="col-sm-2 col-md-2 col-lg-2 noGutter" >
-                <a href="aktivity.html#turistika_mladeze">
-                  <img src="img/i_mladez.png" alt="Turistika mládeže" class="img-responsive item">
-                </a>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
-    <!-- Event calendar --> 
+    <!-- Event calendar -->
     <div class="anchor" id="Akce"></div>
     <div class="container-fluid events">
-      <h3 class="mainSection">Kalendář turistických akcí</h3>
-      <div class="container">
-        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
-          <div class="button-group filter">
-            <a href="#" data-toggle="dropdown">
-              <h4 class="collapseButton saletitle" data-toggle="collapse" data-target="#oblasti"><i class='glyphicon glyphicon-map-marker'></i> Oblast <i class="glyphicon glyphicon-menu-down"></i></h4>
-            </a>
-            <ul id="oblasti" class="collapse">
-              <li><label><input type="checkbox" name="checkbox" value="value">&nbsp;Ústředí KČT</label></li>
-              <li><label><input type="checkbox" name="checkbox" value="value">&nbsp;Ústředí KČT</label></li>
-              <li><label><input type="checkbox" name="checkbox" value="value">&nbsp;Praha</label></li>
-              <li><label><input type="checkbox" name="checkbox" value="value">&nbsp;Středočeská</label></li>
-              <li><label><input type="checkbox" name="checkbox" value="value">&nbsp;Jižní Čechy</label></li>
-              <li><label><input type="checkbox" name="checkbox" value="value">&nbsp;Plzeňského kraje</label></li>
-              <li><label><input type="checkbox" name="checkbox" value="value">&nbsp;Karlovarský kraj</label></li>              
-              <li><label><input type="checkbox" name="checkbox" value="value">&nbsp;Ústecký kraj</label></li>
-              <li><label><input type="checkbox" name="checkbox" value="value">&nbsp;Liberecký kraj</label></li>
-              <li><label><input type="checkbox" name="checkbox" value="value">&nbsp;Královehradecký kraj</label></li> 
-              <li><label><input type="checkbox" name="checkbox" value="value">&nbsp;Pardubický kraj</label></li>              
-              <li><label><input type="checkbox" name="checkbox" value="value">&nbsp;Vysočina</label></li>
-              <li><label><input type="checkbox" name="checkbox" value="value">&nbsp;Jihomoravská</label></li>
-              <li><label><input type="checkbox" name="checkbox" value="value">&nbsp;Olomoucký kraj</label></li>         
-              <li><label><input type="checkbox" name="checkbox" value="value">&nbsp;Moravskoslezská</label></li>
-              <li><label><input type="checkbox" name="checkbox" value="value">&nbsp;Valašsko-Chřiby</label></li> 
-            </ul>
-          </div>
-        </div>
-        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
-          <div class="button-group filter">
-            <a href="#" data-toggle="dropdown">
-              <h4 class="collapseButton saletitle" data-toggle="collapse" data-target="#datum"><i class='glyphicon glyphicon-calendar'></i> Datum <i class="glyphicon glyphicon-menu-down"></i></h4>
-            </a>
-            <div id="datum" class="collapse">
-              <h4>Začátek akce:</h4>
-              <div class="input-group">
-                <input id="dpd1" type="text" name="date" class="form-control" data-date-format="dd. mm. yyyy" placeholder="Vyberte datum" aria-label="Textový vstup pro datum">
-              </div>
-              <h4>Konec akce:</h4>
-              <div class="input-group">
-                <input id="dpd2" type="text" name="date"  class="form-control" data-date-format="dd. mm. yyyy" placeholder="Vyberte datum" aria-label="Textový vstup pro datum">
-              </div>
-              </div>
-              </div>
-          </div>
-          <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
-            <div class="button-group filter">
-              <a href="#" data-toggle="dropdown">
-                <h4 class="collapseButton saletitle" data-toggle="collapse" data-target="#aktivity"><i class='glyphicon glyphicon glyphicon-tent'></i> Aktivita <i class="glyphicon glyphicon-menu-down"></i></h4>
-              </a>
-              <ul id="aktivity" class="collapse">
-                <li><label><input type="checkbox" name="checkbox" value="value">&nbsp;Vše</label></li>
-                <li><label><input type="checkbox" name="checkbox" value="value">&nbsp;Běžecká turistika</label></li>
-                <li><label><input type="checkbox" name="checkbox" value="value">&nbsp;Cykloturistika</label></li>
-                <li><label><input type="checkbox" name="checkbox" value="value">&nbsp;Etapový pochod</label></li>
-                <li><label><input type="checkbox" name="checkbox" value="value">&nbsp;Hipoturistika</label></li>
-                <li><label><input type="checkbox" name="checkbox" value="value">&nbsp;Lyžařská turistika</label></li>
-                <li><label><input type="checkbox" name="checkbox" value="value">&nbsp;Mototuristika</label></li>
-                <li><label><input type="checkbox" name="checkbox" value="value">&nbsp;Pěší turistika</label></li>
-                <li><label><input type="checkbox" name="checkbox" value="value">&nbsp;Pro mládež</label></li>
-                <li><label><input type="checkbox" name="checkbox" value="value">&nbsp;Speleoturistika</label></li>
-                <li><label><input type="checkbox" name="checkbox" value="value">&nbsp;Vodní turistika</label></li>
-                <li><label><input type="checkbox" name="checkbox" value="value">&nbsp;Vysokohorská turistika</label></li>
-                <li><label><input type="checkbox" name="checkbox" value="value">&nbsp;Zájezd</label></li>
-                <li><label><input type="checkbox" name="checkbox" value="value">&nbsp;Turistika Zdp</label></li>
-              </ul>
+        <h3 class="mainSection">Kalendář turistických akcí</h3>
+        <div class="container">
+            <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                <div class="button-group filter">
+                    <a href="#" data-toggle="dropdown">
+                        <h4 class="collapseButton saletitle" data-toggle="collapse" data-target="#oblasti"><i class='glyphicon glyphicon-map-marker'></i> Oblast <i class="glyphicon glyphicon-menu-down"></i></h4>
+                    </a>
+                    <ul id="oblasti" class="collapse">
+                        <li>
+                            <label>
+                                <input type="checkbox" name="checkbox" value="value">&nbsp;Ústředí KČT</label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="checkbox" value="value">&nbsp;Ústředí KČT</label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="checkbox" value="value">&nbsp;Praha</label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="checkbox" value="value">&nbsp;Středočeská</label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="checkbox" value="value">&nbsp;Jižní Čechy</label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="checkbox" value="value">&nbsp;Plzeňského kraje</label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="checkbox" value="value">&nbsp;Karlovarský kraj</label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="checkbox" value="value">&nbsp;Ústecký kraj</label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="checkbox" value="value">&nbsp;Liberecký kraj</label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="checkbox" value="value">&nbsp;Královehradecký kraj</label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="checkbox" value="value">&nbsp;Pardubický kraj</label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="checkbox" value="value">&nbsp;Vysočina</label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="checkbox" value="value">&nbsp;Jihomoravská</label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="checkbox" value="value">&nbsp;Olomoucký kraj</label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="checkbox" value="value">&nbsp;Moravskoslezská</label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="checkbox" value="value">&nbsp;Valašsko-Chřiby</label>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </div>
-          <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
-            <div class="button-group filter">
-              <a href="#" data-toggle="dropdown">
-                <h4 class="collapseButton saletitle" data-toggle="collapse" data-target="#projekty"><i class='glyphicon glyphicon-plus-sign'></i> Projekt <i class="glyphicon glyphicon-menu-down"></i></h4>
-              </a>
-              <ul id="projekty" class="collapse">
-                <li><label><input type="checkbox" name="checkbox" value="value">&nbsp;A-TOM</label></li>
-                <li><label><input type="checkbox" name="checkbox" value="value">&nbsp;Dvoustovka</label></li>
-                <li><label><input type="checkbox" name="checkbox" value="value">&nbsp;Eurorando</label></li>
-                <li><label><input type="checkbox" name="checkbox" value="value">&nbsp;IVV</label></li>
-                <li><label><input type="checkbox" name="checkbox" value="value">&nbsp;Klub zdraví OZP</label></li>
-                <li><label><input type="checkbox" name="checkbox" value="value">&nbsp;Novoroční čtyřlístek</label></li>
-                <li><label><input type="checkbox" name="checkbox" value="value">&nbsp;S turistickou známkou</label></li>
-                <li><label><input type="checkbox" name="checkbox" value="value">&nbsp;Sleva KČT</label></li>
-                <li><label><input type="checkbox" name="checkbox" value="value">&nbsp;Sleva Eurobeds</label></li>
-                <li><label><input type="checkbox" name="checkbox" value="value">&nbsp;Sleva OZP</label></li>
-                <li><label><input type="checkbox" name="checkbox" value="value">&nbsp;Toulavý kočárek</label></li>
-                <li><label><input type="checkbox" name="checkbox" value="value">&nbsp;Toulavý náprstek</label></li>
-                <li><label><input type="checkbox" name="checkbox" value="value">&nbsp;Vystup na svůj vrchol</label></li>
-              </ul>
+            <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                <div class="button-group filter">
+                    <a href="#" data-toggle="dropdown">
+                        <h4 class="collapseButton saletitle" data-toggle="collapse" data-target="#datum"><i class='glyphicon glyphicon-calendar'></i> Datum <i class="glyphicon glyphicon-menu-down"></i></h4>
+                    </a>
+                    <div id="datum" class="collapse">
+                        <h4>Začátek akce:</h4>
+                        <div class="input-group">
+                            <input id="dpd1" type="text" name="date" class="form-control" data-date-format="dd. mm. yyyy" placeholder="Vyberte datum" aria-label="Textový vstup pro datum">
+                        </div>
+                        <h4>Konec akce:</h4>
+                        <div class="input-group">
+                            <input id="dpd2" type="text" name="date" class="form-control" data-date-format="dd. mm. yyyy" placeholder="Vyberte datum" aria-label="Textový vstup pro datum">
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-      </div><!-- container --> 
-      <div class="col-xs-12 col-sm-12 col-md-5 col-lg-4 calendarList noGutter">
-        <!-- Searchbar --> 
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noGutter">
-          <div class="filterTitle">
-            <div class="input-group"> 
-              <input id="filter" type="text" class="form-control" placeholder="Vyhledávání...">
-            </div> 
-          </div>
+            <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                <div class="button-group filter">
+                    <a href="#" data-toggle="dropdown">
+                        <h4 class="collapseButton saletitle" data-toggle="collapse" data-target="#aktivity"><i class='glyphicon glyphicon glyphicon-tent'></i> Aktivita <i class="glyphicon glyphicon-menu-down"></i></h4>
+                    </a>
+                    <ul id="aktivity" class="collapse">
+                        <li>
+                            <label>
+                                <input type="checkbox" name="checkbox" value="value">&nbsp;Vše</label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="checkbox" value="value">&nbsp;Běžecká turistika</label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="checkbox" value="value">&nbsp;Cykloturistika</label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="checkbox" value="value">&nbsp;Etapový pochod</label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="checkbox" value="value">&nbsp;Hipoturistika</label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="checkbox" value="value">&nbsp;Lyžařská turistika</label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="checkbox" value="value">&nbsp;Mototuristika</label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="checkbox" value="value">&nbsp;Pěší turistika</label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="checkbox" value="value">&nbsp;Pro mládež</label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="checkbox" value="value">&nbsp;Speleoturistika</label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="checkbox" value="value">&nbsp;Vodní turistika</label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="checkbox" value="value">&nbsp;Vysokohorská turistika</label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="checkbox" value="value">&nbsp;Zájezd</label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="checkbox" value="value">&nbsp;Turistika Zdp</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                <div class="button-group filter">
+                    <a href="#" data-toggle="dropdown">
+                        <h4 class="collapseButton saletitle" data-toggle="collapse" data-target="#projekty"><i class='glyphicon glyphicon-plus-sign'></i> Projekt <i class="glyphicon glyphicon-menu-down"></i></h4>
+                    </a>
+                    <ul id="projekty" class="collapse">
+                        <li>
+                            <label>
+                                <input type="checkbox" name="checkbox" value="value">&nbsp;A-TOM</label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="checkbox" value="value">&nbsp;Dvoustovka</label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="checkbox" value="value">&nbsp;Eurorando</label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="checkbox" value="value">&nbsp;IVV</label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="checkbox" value="value">&nbsp;Klub zdraví OZP</label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="checkbox" value="value">&nbsp;Novoroční čtyřlístek</label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="checkbox" value="value">&nbsp;S turistickou známkou</label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="checkbox" value="value">&nbsp;Sleva KČT</label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="checkbox" value="value">&nbsp;Sleva Eurobeds</label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="checkbox" value="value">&nbsp;Sleva OZP</label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="checkbox" value="value">&nbsp;Toulavý kočárek</label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="checkbox" value="value">&nbsp;Toulavý náprstek</label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="checkbox" value="value">&nbsp;Vystup na svůj vrchol</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <!-- Table --> 
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noGutter calendar">
-          <table class="table">
-            <tbody class="searchable">
-              <tr data-href="#">
-                <td>
-                  <a href="akce.html">
-                    <h4><b>Za čertovským perníkem</b>, Moravská&nbsp;Třebová</h4>
-                    <h4>28.&nbsp;11.&nbsp;2015</h4>
-                  </a>
-                </td>
-              </tr>
-              <tr data-href="#">
-                <td>
-                  <a href="akce.html">
-                    <h4><b>Křivoklátskem </b>, Křivoklát</h4>
-                    <h4>28. 11. 2015<span class="label label-default">Pěší</span><span class="label label-primary">Akce IVV</span></h4>
-                  </a>
-                </td>
-              </tr>
-              <tr data-href="#">
-                <td>
-                  <a href="akce.html">
-                    <h4><b>Křížem krážem po kopečkách - Vinařická hora (PZP38)</b>, Kladno</h4>
-                    <h4>28. 11. 2015<span class="label label-default">Pěší</span><span class="label label-primary">Akce IVV</span><span class="label label-success">Vystup na svůj vrchol</span></h4>
-                   </a>
-                </td>
-              </tr>
-              <tr data-href="#">
-                <td>
-                  <a href="akce.html">
-                    <h4><b>Mikulášské putování za čertem Barnabášem</b>, Praha&nbsp;10</h4>
-                    <h4>29. 11. 2015<span class="label label-default">Pěší</span><span class="label label-danger">Toulavý kočárek</span></h4>
-                  </a>
-                </td>
-              </tr>
-              <tr data-href="#">
-                <td>
-                  <a href="akce.html">
-                    <h4><b>Zimní táboření na Hvězdě v Broumovských stěnách</b>, Hvězda&nbsp;v&nbsp;Broumovských&nbsp;stěnách</h4>
-                    <h4>30. 11. - 2. 12. 2015<span class="label label-info">Lyžařská</span></h4>
-                  </a>
-                </td>
-              </tr>
-              <tr data-href="#">
-                <td>
-                  <a href="akce.html">
-                    <h4><b>Přejezd sedmi šumavských vrchů s přejezdem hřebene Třístoličníku 1.</b>, Šumava</h4>
-                    <h4>4. 12. - 6. 12. 2015<span class="label label-info">Lyžařská</span></h4>
-                  </a>
-                </td>
-              </tr>
-              <tr data-href="#">
-                <td>
-                  <a href="akce.html">
-                    <h4><b>Pražská stovka</b>, Praha</h4>
-                    <h4>4. 12. - 6. 12. 2015<span class="label label-default">Pěší</span><span class="label label-primary">Akce IVV</span></h4>
-                  </a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+        <!-- container -->
+        <div class="col-xs-12 col-sm-12 col-md-5 col-lg-4 calendarList noGutter">
+            <!-- Searchbar -->
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noGutter">
+                <div class="filterTitle">
+                    <div class="input-group">
+                        <input id="filter" type="text" class="form-control" placeholder="Vyhledávání...">
+                    </div>
+                </div>
+            </div>
+            <!-- Table -->
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noGutter calendar">
+                <table class="table">
+                    <tbody class="searchable">
+                        <tr data-href="#">
+                            <td>
+                                <a href="akce.html">
+                                    <h4><b>Za čertovským perníkem</b>, Moravská&nbsp;Třebová</h4>
+                                    <h4>28.&nbsp;11.&nbsp;2015</h4>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr data-href="#">
+                            <td>
+                                <a href="akce.html">
+                                    <h4><b>Křivoklátskem </b>, Křivoklát</h4>
+                                    <h4>28.&nbsp;11.&nbsp;2015<span class="label label-default">Pěší</span><span class="label label-primary">Akce IVV</span></h4>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr data-href="#">
+                            <td>
+                                <a href="akce.html">
+                                    <h4><b>Křížem krážem po kopečkách - Vinařická&nbsp;hora&nbsp;(PZP38)</b>, Kladno</h4>
+                                    <h4>28.&nbsp;11.&nbsp;2015<span class="label label-default">Pěší</span><span class="label label-primary">Akce IVV</span><span class="label label-success">Vystup na svůj vrchol</span></h4>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr data-href="#">
+                            <td>
+                                <a href="akce.html">
+                                    <h4><b>Mikulášské putování za čertem Barnabášem</b>, Praha&nbsp;10</h4>
+                                    <h4>29.&nbsp;11.&nbsp;2015<span class="label label-default">Pěší</span><span class="label label-danger">Toulavý kočárek</span></h4>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr data-href="#">
+                            <td>
+                                <a href="akce.html">
+                                    <h4><b>Zimní táboření na Hvězdě v Broumovských stěnách</b>, Hvězda&nbsp;v&nbsp;Broumovských&nbsp;stěnách</h4>
+                                    <h4>30.&nbsp;11.&nbsp;-&nbsp;2.&nbsp;12.&nbsp;2015<span class="label label-info">Lyžařská</span></h4>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr data-href="#">
+                            <td>
+                                <a href="akce.html">
+                                    <h4><b>Přejezd sedmi šumavských vrchů s přejezdem hřebene Třístoličníku 1.</b>, Šumava</h4>
+                                    <h4>4.&nbsp;12.&nbsp;-&nbsp;6.&nbsp;12.&nbsp;2015<span class="label label-info">Lyžařská</span></h4>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr data-href="#">
+                            <td>
+                                <a href="akce.html">
+                                    <h4><b>Pražská stovka</b>, Praha</h4>
+                                    <h4>4.&nbsp;12.&nbsp;-&nbsp;6.&nbsp;12.&nbsp;2015<span class="label label-default">Pěší</span><span class="label label-primary">Akce IVV</span></h4>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
-      </div><!-- Map left side end-->
-      <div class="col-xs-12 col-sm-12 col-md-7 col-lg-8 noGutter map-section">
-        <div id="m"></div>
-      </div>
+        <!-- Map left side end-->
+        <div class="col-xs-12 col-sm-12 col-md-7 col-lg-8 noGutter map-section">
+            <div id="m"></div>
+        </div>
     </div>
     <!-- Social-->
     <div class="container social-section">
-      <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12">
-        <iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fkct.cz&amp;width=497&amp;colorscheme=light&amp;show_faces=false&amp;show_border=true&amp;stream=true&amp;header=false&amp;appId=361265270736899" scrolling="no" frameborder="0" style="border:none; overflow:hidden;width:797px;max-width:100%;height:27.96em;" allowTransparency="true"></iframe>
-      </div>
-      <div class="col-lg-6 col-md-6 col-sm-4 hidden-xs">
-        <div class="mainGallery">
-          <div class="col-lg-4 col-md-4 col-sm-12 noGutter">
-            <div class="img-wrap">
-              <img class="thumbnail img-responsive" id="image-1" src="img/gallery_1.jpg">
-            </div>
-          </div>
-          <div class="col-lg-8 col-md-8 col-sm-12 noGutter">
-            <div class="img-wrap">
-            <img class="thumbnail img-responsive" id="image-2" src="img/gallery_2.jpg">
-            </div>
-          </div>
-          <div class="col-lg-7 col-md-7 col-sm-12 noGutter">
-            <div class="img-wrap">
-            <img class="thumbnail img-responsive" id="image-3" src="img/gallery_3.jpg">
-            </div>
-          </div>
-          <div class="col-lg-5 col-md-5 hidden-sm noGutter">
-            <div class="img-wrap">
-            <img class="thumbnail img-responsive" id="image-4" src="img/gallery_4.jpg">
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 hidden-sm noGutter">
-            <div class="img-wrap">
-            <img class="thumbnail img-responsive" id="image-5" src="img/gallery_5.jpg">
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 hidden-sm noGutter">
-            <div class="img-wrap">
-            <img class="thumbnail img-responsive" id="image-6" src="img/gallery_6.jpg">
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 hidden-sm noGutter">
-            <div class="img-wrap">
-            <img class="thumbnail img-responsive" id="image-7" src="img/gallery_7.jpg">
-            </div>
-          </div>
+        <div class="col-lg-6 col-md-7 col-sm-9 col-xs-12">
+            <iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fkct.cz&amp;width=497&amp;colorscheme=light&amp;show_faces=false&amp;show_border=true&amp;stream=true&amp;header=false&amp;appId=361265270736899" scrolling="no" frameborder="0" style="border:none; overflow:hidden;width:797px;max-width:100%;height:27.96em;" allowTransparency="true"></iframe>
         </div>
-      </div>
+        <div class="col-lg-6 col-md-5 hidden-sm hidden-xs">
+            <div class="mainGallery">
+                <div class="col-lg-4 col-md-4 noGutter">
+                    <div class="img-wrap">
+                        <img class="thumbnail img-responsive" id="image-1" src="img/gallery_1.jpg">
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-8 noGutter">
+                    <div class="img-wrap">
+                        <img class="thumbnail img-responsive" id="image-2" src="img/gallery_2.jpg">
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-7 noGutter">
+                    <div class="img-wrap">
+                        <img class="thumbnail img-responsive" id="image-3" src="img/gallery_3.jpg">
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-5 noGutter">
+                    <div class="img-wrap">
+                        <img class="thumbnail img-responsive" id="image-4" src="img/gallery_4.jpg">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 noGutter">
+                    <div class="img-wrap">
+                        <img class="thumbnail img-responsive" id="image-5" src="img/gallery_5.jpg">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 noGutter">
+                    <div class="img-wrap">
+                        <img class="thumbnail img-responsive" id="image-6" src="img/gallery_6.jpg">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 noGutter">
+                    <div class="img-wrap">
+                        <img class="thumbnail img-responsive" id="image-7" src="img/gallery_7.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- Gallery items-->
     <div class="hidden" id="img-repo">
-      <div class="item" id="image-1">
-        <img class="img-responsive" title="Autor / Název obrázku" src="img/gallery_1.jpg">
-      </div>
-      <div class="item" id="image-2">
-        <img class="img-responsive" title="Autor / Název obrázku" src="img/gallery_2.jpg">
-      </div>
-      <div class="item" id="image-3">
-        <img class="img-responsive" title="Autor / Název obrázku" src="img/gallery_3.jpg">
-      </div> 
-      <div class="item" id="image-4">
-        <img class="img-responsive" title="Autor / Název obrázku" src="img/gallery_4.jpg">
-      </div>
-      <div class="item" id="image-5">
-        <img class="img-responsive" title="Autor / Název obrázku" src="img/gallery_5.jpg">
-      </div>
-      <div class="item" id="image-6">
-        <img class="img-responsive" title="Autor / Název obrázku" src="img/gallery_6.jpg">
-      </div>
-      <div class="item" id="image-7">
-        <img class="img-responsive" title="Autor / Název obrázku" src="img/gallery_7.jpg">
-      </div>  
+        <div class="item" id="image-1">
+            <img class="img-responsive" title="Autor / Název obrázku" src="img/gallery_1.jpg">
+        </div>
+        <div class="item" id="image-2">
+            <img class="img-responsive" title="Autor / Název obrázku" src="img/gallery_2.jpg">
+        </div>
+        <div class="item" id="image-3">
+            <img class="img-responsive" title="Autor / Název obrázku" src="img/gallery_3.jpg">
+        </div>
+        <div class="item" id="image-4">
+            <img class="img-responsive" title="Autor / Název obrázku" src="img/gallery_4.jpg">
+        </div>
+        <div class="item" id="image-5">
+            <img class="img-responsive" title="Autor / Název obrázku" src="img/gallery_5.jpg">
+        </div>
+        <div class="item" id="image-6">
+            <img class="img-responsive" title="Autor / Název obrázku" src="img/gallery_6.jpg">
+        </div>
+        <div class="item" id="image-7">
+            <img class="img-responsive" title="Autor / Název obrázku" src="img/gallery_7.jpg">
+        </div>
     </div>
     <!-- PartnersBottom -->
     <div class="container-fluid partners-section">
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 logoPanel">
-        <h4 class="smallSection">Děkujeme našim partnerům</h4>
-        <div class="col-xs-6 col-md-2 col-sm-3 col-lg-2 itemLogo">
-          <a href="#"><img src="img/bottom_logo_cov.png" class="img responsive"  alt="Český olympijský výbor"></a>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 logoPanel">
+            <h4 class="smallSection">Děkujeme našim partnerům</h4>
+            <div class="col-xs-6 col-md-2 col-sm-3 col-lg-2 itemLogo">
+                <a href="#"><img src="img/bottom_logo_cov.png" class="img responsive" alt="Český olympijský výbor"></a>
+            </div>
+            <div class="col-xs-6 col-md-2 col-sm-3 col-lg-2 itemLogo">
+                <a href="#"><img src="img/bottom_logo_msmt.png" class="img responsive" alt="Ministerstvo školství, mládeže a tělovýchovy"></a>
+            </div>
+            <div class="col-xs-6 col-md-2 col-sm-3 col-lg-2 itemLogo">
+                <a href="#"><img src="img/bottom_logo_tz.png" class="img responsive" alt="Turistické známky"></a>
+            </div>
+            <div class="col-xs-6 col-md-2 col-sm-3 col-lg-2 itemLogo">
+                <a href="#"><img src="img/bottom_logo_hame.jpg" class="img responsive" alt="Hamé"></a>
+            </div>
+            <div class="col-xs-6 col-md-2 col-sm-3 col-lg-2  col-sm-push-3 col-md-push-0 itemLogo">
+                <a href="#"><img src="img/boco_logo.png" class="img responsive" alt="BO CO spol. s r.o."></a>
+            </div>
+            <div class="col-xs-6 col-md-2 col-sm-3 col-lg-2  col-sm-push-3 col-md-push-0 itemLogo">
+                <a href="#"><img src="img/bottom_logo_mzp.png" class="img responsive" alt="Ministerstvo životního prostředí"></a>
+            </div>
         </div>
-        <div class="col-xs-6 col-md-2 col-sm-3 col-lg-2 itemLogo">
-          <a href="#"><img src="img/bottom_logo_msmt.png" class="img responsive"  alt="Ministerstvo školství, mládeže a tělovýchovy"></a>
-        </div>
-        <div class="col-xs-6 col-md-2 col-sm-3 col-lg-2 itemLogo">
-          <a href="#"><img src="img/bottom_logo_tz.png" class="img responsive"  alt="Turistické známky"></a>
-        </div>
-        <div class="col-xs-6 col-md-2 col-sm-3 col-lg-2 itemLogo">
-          <a href="#"><img src="img/bottom_logo_hame.jpg" class="img responsive"  alt="Hamé"></a>
-        </div>
-        <div class="col-xs-6 col-md-2 col-sm-3 col-lg-2  col-sm-push-3 col-md-push-0 itemLogo">
-          <a href="#"><img src="img/boco_logo.png" class="img responsive"  alt="BO CO spol. s r.o."></a>
-        </div>
-        <div class="col-xs-6 col-md-2 col-sm-3 col-lg-2  col-sm-push-3 col-md-push-0 itemLogo">
-          <a href="#"><img src="img/bottom_logo_mzp.png" class="img responsive"  alt="Ministerstvo životního prostředí"></a>
-        </div>
-      </div>
     </div>
     <!-- Footer -->
     <footer>
-      <div class="container footernav">
-        <div class="col-xs-12 col-md-4 col-sm-6 col-lg-4">
-          <h4 class="mainSection"><i class="fa fa-angle-right"></i> Mohlo by vás zajímat</h4>
-          <ul class="navTips">
-            <li>
-              <a href="#">
-                <i class="fa fa-calendar fa-2x"></i>
-                <h5>Kalendář turistických akcí</h5>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fa fa-group fa-2x"></i>
-                <h5>Projekty</h5>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fa fa-child fa-2x"></i>
-                <h5>Členství</h5>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fa fa-map fa-2x"></i>
-                <h5>Turistické mapy</h5>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fa fa-home fa-2x"></i>
-                <h5>Turistické chaty</h5>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fa fa-map-marker fa-2x"></i>
-                <h5>Tipy na výlety</h5>
-              </a>
-            </li>
-          </ul>
+        <div class="container footernav">
+            <div class="col-xs-12 col-md-4 col-sm-6 col-lg-4">
+                <h4 class="mainSection"><i class="fa fa-angle-right"></i> Mohlo by vás zajímat</h4>
+                <ul class="navTips">
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-calendar fa-2x"></i>
+                            <h5>Kalendář turistických akcí</h5>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-group fa-2x"></i>
+                            <h5>Projekty</h5>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-child fa-2x"></i>
+                            <h5>Členství</h5>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-map fa-2x"></i>
+                            <h5>Turistické mapy</h5>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-home fa-2x"></i>
+                            <h5>Turistické chaty</h5>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-map-marker fa-2x"></i>
+                            <h5>Tipy na výlety</h5>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-md-4 col-sm-6 col-lg-4 contacts">
+                <h4 class="mainSection"><i class="fa fa-angle-right"></i> Klub českých turistů</h4>
+                <ul>
+                    <li>
+                        <h5>Revoluční 1056/8a, 110 05 Praha 1</h5>
+                        <a href="#">
+                            <button type="button" class="btn btn-info" aria-label="Left Align">
+                                <span class="fa fa-angle-double-right" aria-hidden="true"></span> Zobrazit na mapě
+                            </button>
+                        </a>
+                    </li>
+                    <li>
+                        <h5>PO BOX 37</h5>
+                    </li>
+                    <li>
+                        <h5>IČO: 00505609</h5>
+                    </li>
+                    <li>
+                        <a href="tel:+420251610181"><h5><i class="fa fa-phone fa-2x"></i> 251&nbsp;610&nbsp;181</h5></a>
+                    </li>
+                    <li>
+                        <a href="mailto:kct@kct.cz"><h5><i class="fa fa-envelope-o fa-2x"></i> kct@kct.cz</h5></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-md-4 col-sm-6 col-lg-4 contacts">
+                <h4 class="mainSection"><i class="fa fa-angle-right"></i> Informační centrum</h4>
+                <ul>
+                    <li>
+                        <h5>Fügnerovo&nbsp;náměstí&nbsp;3, 120&nbsp;00 Praha&nbsp;2</h5>
+                        <a href="#">
+                            <button type="button" class="btn btn-info" aria-label="Left Align">
+                                <span class="fa fa-angle-double-right" aria-hidden="true"></span> Zobrazit na mapě
+                            </button>
+                        </a>
+                    </li>
+                    <li>
+                        <h5>Otevírací doba:</h5>
+                    </li>
+                    <li>
+                        <h5>Pondělí až čtvrtek: 10:00-18:00&nbsp;hodin</h5>
+                    </li>
+                    <li>
+                        <a href="tel:+420251610181"><h5><i class="fa fa-phone fa-2x"></i> 224&nbsp;498&nbsp;355</a><a href="tel:+420251610181"><h5><i class="fa fa-phone fa-2x"></i> 736&nbsp;754&nbsp;030</h5></a>
+                    </li>
+                    <li>
+                        <a href="mailto:info@kct.cz"><h5><i class="fa fa-envelope-o fa-2x"></i> info@kct.cz</h5></a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="col-xs-12 col-md-4 col-sm-6 col-lg-4 contacts">
-          <h4 class="mainSection"><i class="fa fa-angle-right"></i> Klub českých turistů</h4>
-          <ul>
-            <li>
-              <h5>Revoluční 1056/8a, 110 05 Praha 1</h5>
-              <a href="#">
-                <button type="button" class="btn btn-info" aria-label="Left Align">
-                  <span class="fa fa-angle-double-right" aria-hidden="true"></span> Zobrazit na mapě
-                </button>
-              </a>
-            </li>
-            <li>
-              <h5>PO BOX 37</h5>
-            </li>
-            <li>
-              <h5>IČO: 00505609</h5>
-            </li>
-            <li>
-              <a href="tel:+420251610181"><h5><i class="fa fa-phone fa-2x"></i> 251&nbsp;610&nbsp;181</h5></a>
-            </li>
-            <li> 
-              <a href="mailto:kct@kct.cz"><h5><i class="fa fa-envelope-o fa-2x"></i> kct@kct.cz</h5></a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-xs-12 col-md-4 col-sm-6 col-lg-4 contacts">
-          <h4 class="mainSection"><i class="fa fa-angle-right"></i> Informační centrum</h4>
-          <ul>
-            <li>
-              <h5>Fügnerovo&nbsp;náměstí&nbsp;3, 120&nbsp;00 Praha&nbsp;2</h5>
-              <a href="#">
-                <button type="button" class="btn btn-info" aria-label="Left Align">
-                  <span class="fa fa-angle-double-right" aria-hidden="true"></span> Zobrazit na mapě
-                </button>
-              </a>
-            </li>
-            <li>
-              <h5>Otevírací doba:</h5>
-            </li>
-            <li>
-              <h5>Pondělí až čtvrtek: 10:00-18:00&nbsp;hodin</h5>
-            </li>
-            <li>
-              <a href="tel:+420251610181"><h5><i class="fa fa-phone fa-2x"></i> 224&nbsp;498&nbsp;355</a><a href="tel:+420251610181"><h5><i class="fa fa-phone fa-2x"></i> 736&nbsp;754&nbsp;030</h5></a>
-            </li>
-            <li>
-              <a href="mailto:info@kct.cz"><h5><i class="fa fa-envelope-o fa-2x"></i> info@kct.cz</h5></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <p class="copyright"><a href="#">Mapa stránek</a><span class="pull-right"><i class="fa fa-copyright"></i>&nbsp;2016 Klub českých turistů</span></p>
+        <p class="copyright"><a href="#">Mapa stránek</a><span class="pull-right"><i class="fa fa-copyright"></i>&nbsp;2016 Klub českých turistů</span></p>
     </footer>
     <!-- Modal gallery -->
     <div class="modal" id="modal-gallery" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button class="close" type="button" data-dismiss="modal">×</button>
-          </div>
-          <div class="modal-body">
-            <div id="modal-carousel" class="carousel">
-              <div class="carousel-inner">           
-              </div>
-              <a class="carousel-control left" href="#modal-carousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
-              <a class="carousel-control right" href="#modal-carousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" type="button" data-dismiss="modal">×</button>
+                </div>
+                <div class="modal-body">
+                    <div id="modal-carousel" class="carousel">
+                        <div class="carousel-inner">
+                        </div>
+                        <a class="carousel-control left" href="#modal-carousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                        <a class="carousel-control right" href="#modal-carousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <h5 class="modal-title"></h5>
+                </div>
             </div>
-          </div>
-          <div class="modal-footer">
-            <h5 class="modal-title"></h5>
-          </div>
         </div>
-      </div>
     </div>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap-datepicker.js"></script>
-    <!-- Datepicker --> 
-    <script>var nowTemp = new Date();
+    <!-- Datepicker -->
+    <script>
+    var nowTemp = new Date();
     var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
-     
+
     var checkin = $('#dpd1').datepicker({
-      onRender: function(date) {
-        return date.valueOf() < now.valueOf() ? 'disabled' : '';
-      }
+        onRender: function(date) {
+            return date.valueOf() < now.valueOf() ? 'disabled' : '';
+        }
     }).on('changeDate', function(ev) {
-      if (ev.date.valueOf() > checkout.date.valueOf()) {
-        var newDate = new Date(ev.date)
-        newDate.setDate(newDate.getDate() + 1);
-        checkout.setValue(newDate);
-      }
-      checkin.hide();
-      $('#dpd2')[0].focus();
+        if (ev.date.valueOf() > checkout.date.valueOf()) {
+            var newDate = new Date(ev.date)
+            newDate.setDate(newDate.getDate() + 1);
+            checkout.setValue(newDate);
+        }
+        checkin.hide();
+        $('#dpd2')[0].focus();
     }).data('datepicker');
     var checkout = $('#dpd2').datepicker({
-      onRender: function(date) {
-        return date.valueOf() <= checkin.date.valueOf() ? 'disabled' : '';
-      }
+        onRender: function(date) {
+            return date.valueOf() <= checkin.date.valueOf() ? 'disabled' : '';
+        }
     }).on('changeDate', function(ev) {
-      checkout.hide();
+        checkout.hide();
     }).data('datepicker');
     </script>
-    <!-- Photogallery -->  
-    <script>$(document).ready(function() {
-        
-   /* activate the carousel */
-   $("#modal-carousel").carousel({interval:false});
+    <!-- Photogallery -->
+    <script>
+    $(document).ready(function() {
 
-   /* change modal title when slide changes */
-   $("#modal-carousel").on("slid.bs.carousel",       function () {
-        $(".modal-title")
-        .html($(this)
-        .find(".active img")
-        .attr("title"));
-   });
+        /* activate the carousel */
+        $("#modal-carousel").carousel({
+            interval: false
+        });
 
-   /* when clicking a thumbnail */
-   $(".row .thumbnail").click(function(){
-    var content = $(".carousel-inner");
-    var title = $(".modal-title");
-  
-    content.empty();  
-    title.empty();
-  
-    var id = this.id;  
-     var repo = $("#img-repo .item");
-     var repoCopy = repo.filter("#" + id).clone();
-     var active = repoCopy.first();
+        /* change modal title when slide changes */
+        $("#modal-carousel").on("slid.bs.carousel", function() {
+            $(".modal-title")
+                .html($(this)
+                    .find(".active img")
+                    .attr("title"));
+        });
 
-    active.addClass("active");
-    title.html(active.find("img").attr("title"));
-    content.append(repoCopy);
+        /* when clicking a thumbnail */
+        $(".row .thumbnail").click(function() {
+            var content = $(".carousel-inner");
+            var title = $(".modal-title");
 
-    // show the modal
-    $("#modal-gallery").modal("show");
-      });
+            content.empty();
+            title.empty();
+
+            var id = this.id;
+            var repo = $("#img-repo .item");
+            var repoCopy = repo.filter("#" + id).clone();
+            var active = repoCopy.first();
+
+            active.addClass("active");
+            title.html(active.find("img").attr("title"));
+            content.append(repoCopy);
+
+            // show the modal
+            $("#modal-gallery").modal("show");
+        });
     });
     </script>
-    <!-- Navbar sticky --> 
-   <script>
+    <!-- Navbar sticky -->
+    <script>
     jQuery(document).ready(function($) {
-      
-            if ($(window).width() > 768) {
-        var navbar = $('#navbar-main'),
-            distance = navbar.offset().top,
-            $window = $(window);
 
-        $window.scroll(function() {
-            if ($window.scrollTop() >= distance) {
-                navbar.removeClass('navbar-fixed-top').addClass('navbar-fixed-top');
-                $("body").css("padding-top", "70px");
-            } else {
-                navbar.removeClass('navbar-fixed-top');
-                $("body").css("padding-top", "0px");
-            }
-        });
-      }
+        if ($(window).width() > 768) {
+            var navbar = $('#navbar-main'),
+                distance = navbar.offset().top,
+                $window = $(window);
+
+            $window.scroll(function() {
+                if ($window.scrollTop() >= distance) {
+                    navbar.removeClass('navbar-fixed-top').addClass('navbar-fixed-top');
+                    $("body").css("padding-top", "70px");
+                } else {
+                    navbar.removeClass('navbar-fixed-top');
+                    $("body").css("padding-top", "0px");
+                }
+            });
+        }
     });
     </script>
     <script>
     $(document).ready(function() {
-    function toggleNavbarMethod() {
-        if ($(window).width() > 768) {
-            $('.navbar .dropdown').on('mouseover', function(){
-                $('.dropdown-toggle', this).trigger('click'); 
-            }).on('mouseout', function(){
-                $('.dropdown-toggle', this).trigger('click').blur();
-            });
+        function toggleNavbarMethod() {
+            if ($(window).width() > 768) {
+                $('.navbar .dropdown').on('mouseover', function() {
+                    $('.dropdown-toggle', this).trigger('click');
+                }).on('mouseout', function() {
+                    $('.dropdown-toggle', this).trigger('click').blur();
+                });
+            } else {
+                $('.navbar .dropdown').off('mouseover').off('mouseout');
+            }
         }
-        else {
-            $('.navbar .dropdown').off('mouseover').off('mouseout');
-        }
-    }
-    toggleNavbarMethod();
-    $(window).resize(toggleNavbarMethod);
+        toggleNavbarMethod();
+        $(window).resize(toggleNavbarMethod);
     });
     </script>
-    <!-- Row to link table --> 
-    <script>$('*[data-href]').on("click",function(){
-      window.location = $(this).data('href');
-      return false;
-    });
-    $("td > a").on("click",function(e){
-      e.stopPropagation();
-    });</script>
-    <!-- Search bar events --> 
+    <!-- Row to link table -->
     <script>
-    $(document).ready(function () {
+    $('*[data-href]').on("click", function() {
+        window.location = $(this).data('href');
+        return false;
+    });
+    $("td > a").on("click", function(e) {
+        e.stopPropagation();
+    });
+    </script>
+    <!-- Search bar events -->
+    <script>
+    $(document).ready(function() {
 
-    (function ($) {
+        (function($) {
 
-        $('#filter').keyup(function () {
+            $('#filter').keyup(function() {
 
-            var rex = new RegExp($(this).val(), 'i');
-            $('.searchable tr').hide();
-            $('.searchable tr').filter(function () {
-                return rex.test($(this).text());
-            }).show();
+                var rex = new RegExp($(this).val(), 'i');
+                $('.searchable tr').hide();
+                $('.searchable tr').filter(function() {
+                    return rex.test($(this).text());
+                }).show();
 
-        });
+            });
 
-          }(jQuery));
+        }(jQuery));
 
-      });
-    </script> 
-      <!-- Mapy API-->    
-      <script>
-      var obrazek = "img/pin.png";
+    });
+    </script>
+    <!-- Mapy API-->
+    <script>
+    var obrazek = "img/pin.png";
 
-      var m = new SMap(JAK.gel("m"));
-      m.addControl(new SMap.Control.Sync());
-      m.addDefaultControls();
-      m.addDefaultLayer(SMap.DEF_BASE).enable();
-      var mouse = new SMap.Control.Mouse(SMap.MOUSE_PAN | SMap.MOUSE_WHEEL | SMap.MOUSE_ZOOM);
-      m.addControl(mouse); 
-      var controls = m.getControls();
-      for (var i=0;i<controls.length;i++) {
-      if (controls[i] instanceof SMap.Control.Mouse) {
-      controls[i].configure(SMap.MOUSE_PAN | SMap.MOUSE_ZOOM);
-      }
-      }
-      var data = {
-          "Název akce1": "49°32,728'\"N,18°26,867'\"E",
-          "Název akce2": "50°46,055'\"N,15°35,100'\"E",
-          "Název akce3": "49°35,591'\"N,18°38,780\"E",
-          "Název akce4": "49°30,994'\"N,18°42,971'\"E",
-          "Název akce5": "49°6,252'\"N,13°22,745'\"E",
-          "Název akce6": "49°19,993'\"N,18°3,662'\"E",
-          "Název akce7": "50°08,417'\"N,16°35,627'\"E",
-          "Název akce8": "50°43,245'\"N,15°0,202'\"E",
-          "Název akce9": "50°42,548'\"N, 15°43,556'\"E",
-          "Název akce10": "50°42,926'\"N,15°40,818'\"E",
-          "Název akce11": "50°28,469'\"N,15°18,806'\"E",
-          "Název akce12": "50°24,047'\"N,16°11,468'\"E",
-          "Název akce13": "50°27,292'\"N,15°41,674'\"E",
-          "Název akce14": "50°28,112'\"N,15°17,070'\"E",
-          "Název akce15": "50°46,979'\"N,15°30,660'\"E",                  
-      };
-      var znacky = [];
-      var souradnice = [];
+    var m = new SMap(JAK.gel("m"));
+    m.addControl(new SMap.Control.Sync());
+    m.addDefaultControls();
+    m.addDefaultLayer(SMap.DEF_BASE).enable();
+    var mouse = new SMap.Control.Mouse(SMap.MOUSE_PAN | SMap.MOUSE_WHEEL | SMap.MOUSE_ZOOM);
+    m.addControl(mouse);
+    var controls = m.getControls();
+    for (var i = 0; i < controls.length; i++) {
+        if (controls[i] instanceof SMap.Control.Mouse) {
+            controls[i].configure(SMap.MOUSE_PAN | SMap.MOUSE_ZOOM);
+        }
+    }
+    var data = {
+        "Název akce1": "49°32,728'\"N,18°26,867'\"E",
+        "Název akce2": "50°46,055'\"N,15°35,100'\"E",
+        "Název akce3": "49°35,591'\"N,18°38,780\"E",
+        "Název akce4": "49°30,994'\"N,18°42,971'\"E",
+        "Název akce5": "49°6,252'\"N,13°22,745'\"E",
+        "Název akce6": "49°19,993'\"N,18°3,662'\"E",
+        "Název akce7": "50°08,417'\"N,16°35,627'\"E",
+        "Název akce8": "50°43,245'\"N,15°0,202'\"E",
+        "Název akce9": "50°42,548'\"N, 15°43,556'\"E",
+        "Název akce10": "50°42,926'\"N,15°40,818'\"E",
+        "Název akce11": "50°28,469'\"N,15°18,806'\"E",
+        "Název akce12": "50°24,047'\"N,16°11,468'\"E",
+        "Název akce13": "50°27,292'\"N,15°41,674'\"E",
+        "Název akce14": "50°28,112'\"N,15°17,070'\"E",
+        "Název akce15": "50°46,979'\"N,15°30,660'\"E",
+    };
+    var znacky = [];
+    var souradnice = [];
 
-      for (var name in data) { 
-          var coor = SMap.Coords.fromWGS84(data[name]);
-          
-          var options = {
-              url:obrazek,
-              title:name,
-              anchor: {left:10, bottom: 1}
-          }
-          
-          var znacka = new SMap.Marker(coor, null, options);
+    for (var name in data) {
+        var coor = SMap.Coords.fromWGS84(data[name]);
 
-      var c = new SMap.Card();
-      c.setSize(380, 200);
+        var options = {
+            url: obrazek,
+            title: name,
+            anchor: {
+                left: 10,
+                bottom: 1
+            }
+        }
 
-      c.getHeader().innerHTML = "<h3>Název akce řádek</h3><hr>";
-      c.getFooter().innerHTML = '<a href="akce.html"><h3>Detail akce</h3></a>';
-      c.getBody().innerHTML = "<h4>4. září – 6. září 2015</h4><h4>Železná Ruda, okres Klatovy</h4>";
+        var znacka = new SMap.Marker(coor, null, options);
+
+        var c = new SMap.Card();
+        c.setSize(380, 200);
+
+        c.getHeader().innerHTML = "<h3>Název akce řádek</h3><hr>";
+        c.getFooter().innerHTML = '<a href="akce.html"><h3>Detail akce</h3></a>';
+        c.getBody().innerHTML = "<h4>4. září – 6. září 2015</h4><h4>Železná Ruda, okres Klatovy</h4>";
 
 
         znacka.decorate(SMap.Marker.Feature.Card, c);
-          souradnice.push(coor);
-          znacky.push(znacka);
-      }
+        souradnice.push(coor);
+        znacky.push(znacka);
+    }
 
-      var options = {
-          anchor: {left:0.5, top:0.5}
-      }
-      znacky[1].decorate(SMap.Marker.Feature.RelativeAnchor, options);
+    var options = {
+        anchor: {
+            left: 0.5,
+            top: 0.5
+        }
+    }
+    znacky[1].decorate(SMap.Marker.Feature.RelativeAnchor, options);
 
-      var vrstva = new SMap.Layer.Marker();   
-      m.addLayer(vrstva);                          
-      vrstva.enable();                         
-      for (var i=0;i<znacky.length;i++) {
-          vrstva.addMarker(znacky[i]);
-      }
+    var vrstva = new SMap.Layer.Marker();
+    m.addLayer(vrstva);
+    vrstva.enable();
+    for (var i = 0; i < znacky.length; i++) {
+        vrstva.addMarker(znacky[i]);
+    }
 
-      var cz = m.computeCenterZoom(souradnice); 
-      m.setCenterZoom(cz[0], cz[1]);
-      </script>
-  </body>
+    var cz = m.computeCenterZoom(souradnice);
+    m.setCenterZoom(cz[0], cz[1]);
+    </script>
+</body>
+
 </html>
