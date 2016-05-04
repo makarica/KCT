@@ -164,18 +164,18 @@
     <!-- Zakladni obsah-->
     <div class="container page">
         <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
-            <h1 class="page-content">Naše projekty</h1>
+            <h1 class="page-content">Oblastní rozdělení</h1>
             <ol class="breadcrumb">
                 <li><a href="/index.html">Domů</a></li>
                 <li class="active">O klubu</li>
                 <li class="active">Oblastní rozdělení</li>
             </ol>
             <hr>
-            <p>Základní organizační jednotkou KČT jsou odbory, které se sdružují do 14 oblastí, totožných s hranicemi krajů. Turistické oddíly mládeže jsou sdruženy do <a href="http://www.a-tom.cz">Asociace TOM</a>.
-                <br> Pokračujte prosím výběrem z mapy.</p>
+            <p>Základní organizační jednotkou KČT jsou odbory, které se sdružují do 14 oblastí, totožných s hranicemi krajů. Turistické oddíly mládeže jsou sdruženy do <a href="http://www.a-tom.cz">Asociace TOM</a>.</p>
+            <div class="hidden-xs col-sm-12 col-md-12 col-lg-12">
             <!-- Mapa -->
             <div id="mapa-cr-obrazek">
-                <img alt="Vyberte kraj" src="img/mapa-cr.gif" style="border: 0px solid currentColor; max-width: 100%; height: 273px; opacity: 0;" usemap="#mapa-cr" />
+                <img alt="Vyberte kraj" src="img/mapa-cr.gif" style="border: 0px solid currentColor;opacity: 0;" usemap="#mapa-cr" />
             </div>
             <div id="myTab">
                 <!-- Tab menu -->
@@ -198,7 +198,31 @@
                     <area alt="KČT Karlovarský kraj" coords="0,81, 58,65, 80,79, 84,107, 30,124" href="#karlovarsky-kraj" data-toggle="tab" onmouseout="highlight('none');" onmouseover="highlight('105');" shape="poly" title="KČT Karlovarský kraj" />
                     <area alt="KČT oblast Ústecký kraj" coords="61,65, 154,4, 170,4, 181,25, 163,31, 155,47, 165,65, 155,78, 130,80, 84,109, 81,77" href="#oblast-ustecky-kraj" data-toggle="tab" onmouseout="highlight('none');" onmouseover="highlight('106');" shape="poly" title="KČT oblast Ústecký kraj" />
                 </map>
-            </div>
+            </div></div>
+            <div class="form-group col-xs-12 hidden-sm hidden-md hidden-lg">
+                <div class="dropdown">
+  <button class="btn btn-info btn-lg dropdown-toggle" type="button" id="dropdownMenuOblast" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Seznam oblastí
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuOblasti">
+    <li><a href="#praha" data-toggle="tab">Praha</a></li>
+    <li><a href="#jestedska-oblast" data-toggle="tab">Ještědská oblast</a></li>
+    <li><a href="#jihoceskeho-kraje" data-toggle="tab">Jihočeského kraje</a></li>
+    <li><a href="#jihomoravska-oblast" data-toggle="tab">Jihomoravská</a></li>
+    <li><a href="#karlovarsky-kraj" data-toggle="tab">Karlovarský kraj</a></li>
+    <li><a href="#kralovehradeckeho-kraje" data-toggle="tab">Královehradeckého kraje</a></li>
+    <li><a href="#oblast-moravskoslezska" data-toggle="tab">Moravskoslezská</a></li>
+    <li><a href="#olomoucky-kraj" data-toggle="tab">Olomoucký kraj</a></li>
+    <li><a href="#pardubicky-kraj" data-toggle="tab">Pardubický kraj</a></li>
+    <li><a href="#plzenskeho-kraje" data-toggle="tab">Plzeňského kraje</a></li>
+    <li><a href="#stredoceska-oblast" data-toggle="tab">Středočeská</a></li>
+    <li><a href="#oblast-ustecky-kraj" data-toggle="tab">Ústecký kraj</a></li>
+    <li><a href="#valassko-chriby" data-toggle="tab">Valašsko-Chřiby</a></li>
+    <li><a href="#vysocina" data-toggle="tab">Vysočina</a></li>
+  </ul>
+</div>
+                                    </div>
             <div class="tab-content">
                 <!-- Tab content -->
                 <div class="tab-pane" id="jestedska-oblast">
@@ -206,7 +230,7 @@
                         <h2 class="page-content-section">KČT Ještědská oblast</h2>
                         <hr>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                                 <h4 class="page-content-section">Předsedkyně:</h4>
                                 <p>Zdeňka Marková</p>
                                 <h4 class="page-content-section">Sekretariát:</h4>
@@ -214,7 +238,7 @@
                                     <br>Jablonecká 21, 460 01 Liberec</p>
                                 <p><i class="glyphicon glyphicon-earphone"></i> 736 754 170, <i class="glyphicon glyphicon-envelope"></i> <a href="mailto:kctliberec@seznam.cz">kctliberec@seznam.cz</a></p>
                             </div>
-                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                                 <h4 class="page-content-section">Web:</h4>
                                 <p><a href="http://www.kct-libereckykraj.cz">www.kct-libereckykraj.cz</a></p>
                             </div>
@@ -400,7 +424,7 @@
                         <h2 class="page-content-section">KČT Královéhradeckého kraje</h2>
                         <hr>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                                 <h4 class="page-content-section">Předseda:</h4>
                                 <p>RNDR. Václav Hovorka
                                     <br>Smiřická 258, 503 41 Hradec Králové
@@ -414,7 +438,7 @@
                                 <p><i class="glyphicon glyphicon-earphone"></i> 495 422 239, 736 754 180
                                     <br> <i class="glyphicon glyphicon-envelope"></i> <a href="mailto:jagrova.dana@seznam.cz">jagrova.dana@seznam.cz</a></p>
                             </div>
-                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                                 <h4 class="page-content-section">Web:</h4>
                                 <p><a href="http://www.kcthradeckralove.estranky.cz/">www.kcthradeckralove.estranky.cz</a></p>
                             </div>
@@ -644,7 +668,7 @@
                         <h2 class="page-content-section">KČT Pardubický kraj</h2>
                         <hr>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                                 <h4 class="page-content-section">Předseda:</h4>
                                 <p>Ing. Milan Zeman</p>
                                 <h4 class="page-content-section">Sekretariát:</h4>
@@ -835,7 +859,7 @@
                         <h2 class="page-content-section">KČT Olomoucký kraj</h2>
                         <hr>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                                 <h4 class="page-content-section">Předseda:</h4>
                                 <p>Rostislav Klemeš
                                     <br><i class="glyphicon glyphicon-earphone"></i> 777 204 326
@@ -845,7 +869,7 @@
                                 <p><i class="glyphicon glyphicon-earphone"></i> 736 754 060
                                     <br> <i class="glyphicon glyphicon-envelope"></i> <a href="mailto:ivetaklemesova@seznam.cz">ivetaklemesova@seznam.cz</a></p>
                             </div>
-                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                                 <h4 class="page-content-section">Web:</h4>
                                 <p><a href="http://kctolomoucko.webnode.cz">kctolomoucko.webnode.cz</a></p>
                             </div>
@@ -1031,7 +1055,7 @@
                         <h2 class="page-content-section">KČT Oblast Moravskoslezská</h2>
                         <hr>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                                 <h4 class="page-content-section">Předseda:</h4>
                                 <p>Ing. Břetislav Boháč
                                     <br><i class="glyphicon glyphicon-earphone"></i> 602 764 043
@@ -1042,7 +1066,7 @@
                                     <br> <i class="glyphicon glyphicon-envelope"></i> <a href="mailto:kct.msk@email.cz">kct.msk@email.cz</a>
                                     <br><i class="glyphicon glyphicon-time"></i> Úterý a čtvrtek: 11-16 hod.</p>
                             </div>
-                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                                 <h4 class="page-content-section">Web:</h4>
                                 <p><a href="http://www.kct-msk.com">www.kct-msk.com</a></p>
                             </div>
@@ -1228,7 +1252,7 @@
                         <h2 class="page-content-section">KČT Valašsko - Chřiby</h2>
                         <hr>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                                 <h4 class="page-content-section">Předsedkyně:</h4>
                                 <p>Mgr. Libuše Valentová</p>
                                 <h4 class="page-content-section">Sekretariát:</h4>
@@ -1238,7 +1262,7 @@
                                     <br> <i class="glyphicon glyphicon-envelope"></i> <a href="mailto:kctoblast114@email.cz">kctoblast114@email.cz</a>
                                     <br><i class="glyphicon glyphicon-time"></i> Pondělí - Pátek: 15,00 - 17,00 hod.</p>
                             </div>
-                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                                 <h4 class="page-content-section">Web:</h4>
                                 <p><a href="http://www.kct-valassko-chriby.com">www.kct-valassko-chriby.com</a></p>
                             </div>
@@ -1424,7 +1448,7 @@
                         <h2 class="page-content-section">KČT Jihomoravská oblast</h2>
                         <hr>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                                 <h4 class="page-content-section">Předsedkyně:</h4>
                                 <p>Ing. Hana Slabáková, <i class="glyphicon glyphicon-earphone"></i> 736 754 098</p>
                                 <h4 class="page-content-section">Sídlo:</h4>
@@ -1432,7 +1456,7 @@
                                 <p><i class="glyphicon glyphicon-envelope"></i> <a href="mailto:kctjmo@seznam.cz">kctjmo@seznam.cz</a>
                                     <br><i class="glyphicon glyphicon-time"></i> Pondělí: 15.30 - 16.30 hod.</p>
                             </div>
-                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                                 <h4 class="page-content-section">Místopředseda a sekretář:</h4>
                                 <p>Ing. Luděk Leder, <i class="glyphicon glyphicon-earphone"></i> 736 754 070</p>
                                 <h4 class="page-content-section">Značení:</h4>
@@ -1622,7 +1646,7 @@
                         <h2 class="page-content-section">KČT Vysočina</h2>
                         <hr>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                                 <h4 class="page-content-section">Předsedkyně:</h4>
                                 <p>Mgr. Marie Vincencová, <i class="glyphicon glyphicon-earphone"></i> 565 537 406, 728 217 174</p>
                                 <h4 class="page-content-section">Sekretariát:</h4>
@@ -1630,7 +1654,7 @@
                                     <br>Na Kopci 22, 586 01 Jihlava</p>
                                 <p><i class="glyphicon glyphicon-earphone"></i> 736 754 080, <i class="glyphicon glyphicon-envelope"></i> <a href="mailto:kct-vysocina@volny.cz">kct-vysocina@volny.cz</a></p>
                             </div>
-                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                                 <h4 class="page-content-section">Web:</h4>
                                 <p><a href="http://www.kctvysocina.cz">www.kctvysocina.cz</a></p>
                             </div>
@@ -1816,7 +1840,7 @@
                         <h2 class="page-content-section">KČT Jihočeského kraje</h2>
                         <hr>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                                 <h4 class="page-content-section">Předseda:</h4>
                                 <p>Jiří Franc, <i class="glyphicon glyphicon-earphone"></i> 736 754 130, 724 270 023
                                     <br><i class="glyphicon glyphicon-envelope"></i> <a href="mailto:jiri.franc@kct.cz">jiri.franc@kct.cz</a></p>
@@ -1824,7 +1848,7 @@
                                 <p>Skuherského 14, 370 04 České Budějovice</p>
                                 <p><i class="glyphicon glyphicon-time"></i> První pondělí v měsíci 13:45 - 15:45 hod. Jindy po domluvě.</p>
                             </div>
-                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                                 <h4 class="page-content-section">Místopředseda:</h4>
                                 <p>Ing. Jiří Fink, <i class="glyphicon glyphicon-earphone"></i> 724 818 935,
                                     <br><i class="glyphicon glyphicon-envelope"></i> <a href="mailto:jiri.fink@centrum.cz">jiri.fink@centrum.cz</a></p>
@@ -2077,13 +2101,13 @@
                             <h4 class="page-content-section">Bankovní spojení:</h4>
                             <p>č. ú. 2900500261/2010 FioBanka, a.s.</p>
                         </div>
-                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                             <h4 class="page-content-section">Předseda, statutární zástupce:</h4>
                             <p>Ing. Jiří Laibl, <i class="glyphicon glyphicon-envelope"></i> <a href="mailto:Jiri.Laibl@trelleborg.com">Jiri.Laibl@trelleborg.com</a></p>
                             <h4 class="page-content-section">Místopředsedkyně, statutární zástupkyně:</h4>
                             <p>Josefa Mašínová, <i class="glyphicon glyphicon-envelope"></i> <a href="mailto:mas.jos@centrum.cz">mas.jos@centrum.cz</a></p>
                         </div>
-                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                             <h4 class="page-content-section">Sekretariát:</h4>
                             <p>Revoluční 1056/8a, 110 00 Praha 1</p>
                             <p><i class="glyphicon glyphicon-envelope"></i> <a href="mailto:sekretar@sokct.cz">sekretar@sokct.cz</a></p>
@@ -2316,11 +2340,11 @@
                     <!-- Col12 Členství-->
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <h2 class="page-content-section">Síň slávy oblasti</h2>
-                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                             <img src="img/diplom_kct_rakovnik.png" class="img-responsive" alt="..." style="width: 100% ">
                             <!-- width později smazat -->
                         </div>
-                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                             <h3 class="page-content-section">Odbor KČT Rakovník</h3>
                             <p><a href="www.kctrakovnik.wbs.cz">www.kctrakovnik.wbs.cz</a></p>
                             <p>Odbor KČT Rakovník oslavil v roce 2012 sto let od svého založení. V současné době má 110 členů, organizuje celkem tři dálkové etapové pochody, pečuje o pět městských a příměstských tras IVV v okolí Rakovníka a Strakonic a o 121 km dlouhou okružní trasu Rakovnickým okresem.</p>
@@ -2356,13 +2380,13 @@
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                                 <h4 class="page-content-section">Předseda, statutární zástupce:</h4>
                                 <p> Ing. Ivan Press, <i class="glyphicon glyphicon-earphone"></i> 736 754 110</p>
                                 <h4 class="page-content-section">Sekretářka:</h4>
                                 <p>Helena Holubová, <i class="glyphicon glyphicon-earphone"></i> 736 754 624
                             </div>
-                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                                 <h4 class="page-content-section">Sekretariát:</h4>
                                 <p>Fügnerovo nám. 3, 120 00 Praha 2</p>
                                 <p><i class="glyphicon glyphicon-earphone"></i> 224 261 919, <i class="glyphicon glyphicon-envelope"></i> <a href="mailto:praha@kct.cz">praha@kct.cz</a></p>
@@ -2599,7 +2623,7 @@
                         <h2 class="page-content-section">KČT Plzeňského kraje</h2>
                         <hr>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                                 <h4 class="page-content-section">Předseda, statutární zástupce:</h4>
                                 <p> Josef Sýkora <i class="glyphicon glyphicon-earphone"></i> 777 924 904
                                     <br>
@@ -2609,7 +2633,7 @@
                                     <br>
                                     <i class="glyphicon glyphicon-earphone"></i> 736 754 140</p>
                             </div>
-                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                                 <h4 class="page-content-section">Web:</h4>
                                 <p><a href="http://www.plzenskykraj.kct.cz">www.plzenskykraj.kct.cz</a></p>
                             </div>
@@ -2794,7 +2818,7 @@
                         <h2 class="page-content-section">KČT Karlovarský kraj</h2>
                         <hr>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                                 <h4 class="page-content-section">Předseda:</h4>
                                 <p> Ladislav Zoubek <i class="glyphicon glyphicon-earphone"></i> 725 729 570
                                     <br>
@@ -2803,7 +2827,7 @@
                                 <p>Husitská 2053, 356 01 Sokolov
                                     <br>
                             </div>
-                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                                 <h4 class="page-content-section">Sekretářka a hospodářka:</h4>
                                 <p>Růžena Balatá
                                     <br> Hlavní 224, 353 01 Mariánské Lázně
@@ -2994,7 +3018,7 @@
                         <h2 class="page-content-section">KČT Oblast Ústecký kraj</h2>
                         <hr>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                                 <h4 class="page-content-section">Předseda:</h4>
                                 <p> PaedDr. Jan Eichler
                                     <br><i class="glyphicon glyphicon-earphone"></i> 724 101 150
@@ -3007,7 +3031,7 @@
                                     <br>
                                     <i class="glyphicon glyphicon-envelope"></i> <a href="mailto:tiliacz@volny.cz">tiliacz@volny.cz</a>
                             </div>
-                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                                 <h4 class="page-content-section">Web:</h4>
                                 <p><a href="http://www.kct-uk.cz">www.kct-uk.cz</a></p>
                                 </p>
