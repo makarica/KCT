@@ -370,7 +370,6 @@ h4.smallSection {
 	transition: opacity .25s ease;
 }
 .eventTip .overlay{
-
 	background-color:rgba(228, 0, 0, 0.53)
 }
 .imgWrap:hover .overlay{
@@ -472,6 +471,9 @@ h4.smallSection {
 	color:#ABABAB;
 	display:inline-block;
 	cursor: pointer;
+	border:1px solid;
+	border-radius: 24px;
+	padding:0.5em 1.1em;
 }
 .collapseButton:hover{
 	color:gray;
