@@ -85,9 +85,9 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
 <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav row">
-            <li><a href="#Akce"><b class="caret"></b> Akce</a></li>
+            <li><a href="index.html#Akce"><b class="caret"></b> Akce</a></li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"> O klubu</a>
+              <a href="#" class="dropdown-toggle disabled" data-toggle="dropdown"> O klubu</a>
                 <ul class="dropdown-menu">
                   <li><a href="historie.html"><h5>Historie</h5></a></li>
                   <li><a href="cinnost-klubu.html"><h5>Činnost klubu</h5></a></li>
@@ -99,7 +99,7 @@
                 </ul>
             </li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Turistika</a>
+              <a href="#" class="dropdown-toggle disabled" data-toggle="dropdown"> Turistika</a>
                   <ul class="dropdown-menu">
                 <li><a href="aktivity.html"><h5>Aktivity</h5></a></li>
                 <li><a href="znaceni.html"><h5>Značení</h5></a></li>
@@ -112,7 +112,7 @@
                   </ul>
             </li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Členství</a>
+              <a href="#" class="dropdown-toggle disabled" data-toggle="dropdown"> Členství</a>
                   <ul class="dropdown-menu">
                 <li><a href="jak-se-stat-clenem.html"><h5>Jak se stát členem</h5></a></li>
                 <li><a href="vyhody-a-slevy.html"><h5>Výhody a slevy</h5></a></li>
@@ -121,7 +121,7 @@
                   </ul>
             </li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Kontakty</a>
+              <a href="#" class="dropdown-toggle disabled" data-toggle="dropdown"> Kontakty</a>
                   <ul class="dropdown-menu">
                 <li><a href="kontaktni-informace.html"><h5>Kontaktní informace</h5></a></li>
                 <li><a href="infocentrum.html"><h5>Infocentrum</h5></a></li>
@@ -367,6 +367,15 @@ nově přihlášené). Členství v Alpenverein lze objednat a zaplatit elektro
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <!-- Disabled links in nav (remove for mobile)-->
+    <script>
+        jQuery(document).ready(function($) {
+
+            if ($(window).width() < 768) {
+                $('a').removeClass('disabled');
+            }
+        });
+    </script>
     <!-- Photogallery -->  
     <script>$(document).ready(function() {
         
