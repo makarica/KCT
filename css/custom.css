@@ -253,7 +253,7 @@ nav.shift ul li a:hover:after {
 }
 .heroImg{
   position:relative;
-	background-image: url("../img/5d.jpg");
+	background-image: url("../img/4g.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -363,14 +363,14 @@ h4.smallSection {
 .overlay{
 	height:100%;
 	width:100%;
-	background-color:rgba(255, 255, 255, 0.12);
+	background-color:rgba(83, 125, 203, 0.3);
     opacity:0;
     -webkit-transition: opacity .25s ease;
 	-moz-transition: opacity .25s ease;
 	transition: opacity .25s ease;
 }
 .eventTip .overlay{
-	background-color:rgba(228, 0, 0, 0.53)
+	background-color:rgba(83, 125, 203, 0.3);
 }
 .imgWrap:hover .overlay{
 	opacity:1;
@@ -473,7 +473,7 @@ h4.smallSection {
 	cursor: pointer;
 	border:1px solid;
 	border-radius: 24px;
-	padding:0.5em 1.1em;
+	padding:0.5em 0.9em;
 }
 .collapseButton:hover{
 	color:gray;
