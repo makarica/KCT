@@ -162,7 +162,7 @@
     <!-- Navigation End -->
     <!-- Crumbles -->
     <!-- Zakladni obsah-->
-    <div class="container  page">
+    <div class="container page" id="content">
         <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
             <h1 class="page-content">Klub českých turistů otevřel již desátou bezbariérovou turistickou trasu pro handicapované</h1>
             <ol class="breadcrumb">
@@ -418,24 +418,22 @@ Vstupem do řad 33.000 členů Klubu českých turistů nejen podpoříte česko
     </script>
     <!-- Navbar sticky -->
     <script>
-    jQuery(document).ready(function($) {
-
+    $(document).ready(function() {
         if ($(window).width() > 768) {
-            var navbar = $('#navbar-main'),
-                distance = navbar.offset().top,
-                $window = $(window);
+            var sticky = document.getElementById("navbar-main"),
+                sticky2 = sticky.cloneNode(true);
 
-            $window.scroll(function() {
-                if ($window.scrollTop() >= distance) {
-                    navbar.removeClass('navbar-fixed-top').addClass('navbar-fixed-top');
-                    $("body").css("padding-top", "70px");
-                } else {
-                    navbar.removeClass('navbar-fixed-top');
-                    $("body").css("padding-top", "0px");
-                }
-            });
+            sticky2.style.position = "fixed";
+            document.body.appendChild(sticky2);
+
+            function stickIt() {
+                sticky2.style.visibility = sticky.getBoundingClientRect().top < 0 ? "visible" : "hidden";
+            }
+
+            stickIt();
+            window.addEventListener("scroll", stickIt, false);
         }
-    });
+    }());
     </script>
     <script>
     $(document).ready(function() {
