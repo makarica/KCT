@@ -163,7 +163,7 @@ a {
     position: relative;
     /* needed for clone: */
     top: 0;
-    width: 100%;
+    width:100%;
     z-index: 100;
 }
 
@@ -203,7 +203,9 @@ a {
     max-width: 100%;
     width: auto;
 }
-
+.navbar-right{
+    margin-right:0;
+}
 .navbar-nav > .active > a,
 .navbar-nav > .active > a:hover,
 .navbar-nav > .active > a:focus {
