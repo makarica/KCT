@@ -355,12 +355,11 @@ nav.shift ul li a:hover:after {
 
 .heroImg p {
     font: 400 1.4em/1.2 'Open Sans', sans-serif;
-    padding-top: 4em;
     text-align: center;
     color: #fff;
     line-height: 1.4;
-    padding-bottom: 2em;
 }
+.heroImg .start{padding-top:4em;}
 
 .heroImg a {
     color: #fff;
@@ -1678,4 +1677,31 @@ footer .copyright a:hover {
     color: #46D1FF;
     margin-top: 2em;
     font-weight: 700;
+}
+.advert{
+    background-image: url("../img/bezruc.jpg");
+    background-size: contain;
+    height:40em;
+    max-width:100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-bottom:4em;
+}
+.signs p{
+    opacity:0.64;
+    margin-bottom:2em;
+    padding-left:1em;
+    border-left:3px solid lightgray;
+}
+.signs{
+    margin:2em 0;
+}
+.signs img{
+    margin-top:1em;
+}
+.anchor {
+    display: block;
+    height: 51px;
+    margin-top: -51px;
+    visibility: hidden;
 }
