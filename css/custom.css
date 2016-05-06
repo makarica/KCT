@@ -163,7 +163,7 @@ a {
     position: relative;
     /* needed for clone: */
     top: 0;
-    width:100%;
+    width: 100%;
     z-index: 100;
 }
 
@@ -203,9 +203,11 @@ a {
     max-width: 100%;
     width: auto;
 }
-.navbar-right{
-    margin-right:0;
+
+.navbar-right {
+    margin-right: 0;
 }
+
 .navbar-nav > .active > a,
 .navbar-nav > .active > a:hover,
 .navbar-nav > .active > a:focus {
@@ -1571,88 +1573,109 @@ footer .copyright a:hover {
         width: 80%;
     }
 }
-.pricing-table{
-	width:100%;
-	height:auto;
+
+.pricing-table {
+    width: 100%;
+    height: auto;
     text-align: center;
-    margin:2em 0;
-    border:solid 1px #E8E8E8;
+    margin: 2em 0;
+    border: solid 1px #E8E8E8;
 }
-.pricing-table .pricing-header{
-	width:100%;
-	height:auto;
-	background-color:#F1F1F1;
-	padding:0.7em 0.5em;
-	border-bottom:2px solid #46D1FF;
+
+.pricing-table .pricing-header {
+    width: 100%;
+    height: auto;
+    background-color: #F1F1F1;
+    padding: 0.7em 0.5em;
+    border-bottom: 2px solid #46D1FF;
 }
-.pricing-table .pricing-header .type{
-	font-size:1.6em;
-	font-weight: 700;
-	text-transform: uppercase;
-	color:#46D1FF;
+
+.pricing-table .pricing-header .type {
+    font-size: 1.6em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #46D1FF;
 }
-.pricing-table .pricing-header .price .value{
-	font-size:1.4em;
-	font-weight: 300;
+
+.pricing-table .pricing-header .price .value {
+    font-size: 1.4em;
+    font-weight: 300;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
-.pricing-table .pricing-header .price .small{
-	font-size:0.8em;
-	font-weight: 300;
+
+.pricing-table .pricing-header .price .small {
+    font-size: 0.8em;
+    font-weight: 300;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
-.pricing-table .pricing-header .duration{
-	text-transform: lowercase;
-	color:lightgray;
-	font-weight: 400;
-	font-size:1.1em;
+
+.pricing-table .pricing-header .duration {
+    text-transform: lowercase;
+    color: lightgray;
+    font-weight: 400;
+    font-size: 1.1em;
 }
-.pricing-table .pricing-footer{
-	width:100%;
-	height:auto;
-	background-color:#F1F1F1;
-	padding:2em 0.5em;
+
+.pricing-table .pricing-footer {
+    width: 100%;
+    height: auto;
+    background-color: #F1F1F1;
+    padding: 2em 0.5em;
 }
-.pricing-table ul{
-	margin:0;padding:0;
+
+.pricing-table ul {
+    margin: 0;
+    padding: 0;
 }
-.pricing-table ul li{
-	height:4em;
-	margin:0;
-	padding:0.4em 2em;
-	border-bottom:2px solid #F6F6F6;
+
+.pricing-table ul li {
+    height: 4em;
+    margin: 0;
+    padding: 0.4em 2em;
+    border-bottom: 2px solid #F6F6F6;
     display: block;
 }
+
 .pricing-table ul li span {
-    display: inline-block;  
-    vertical-align: middle;     
+    display: inline-block;
+    vertical-align: middle;
 }
-.pricing-table ul li:before{
+
+.pricing-table ul li:before {
     content: '';
     display: inline-block;
     vertical-align: middle;
-    height: 100%;       
+    height: 100%;
 }
-.pricing-table ul li h5{
-	color:gray;
-	padding:0;
-	margin:0;
-}.pricing-table ul li .glyphicon-remove{
-	line-height:3em;
+
+.pricing-table ul li h5 {
+    color: gray;
+    padding: 0;
+    margin: 0;
 }
-.glyphicon-remove{
-	color:#FF4D4D;
+
+.pricing-table ul li .glyphicon-remove {
+    line-height: 3em;
 }
-.signup form{
-	background-color:#F1F1F1;
-	padding:0.3em 2em;
-	margin:2em 0;
+
+.glyphicon-remove {
+    color: #FF4D4D;
 }
-.signup form .form-control{
-border:none;
-border-radius: 0;
-border-bottom:1px solid lightgray;
+
+.signup form {
+    background-color: #F1F1F1;
+    padding: 0.3em 2em;
+    margin: 2em 0;
 }
-.signup legend{
-	color:#46D1FF;
+
+.signup form .form-control {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid lightgray;
+}
+
+.signup legend {
+    color: #46D1FF;
     margin-top: 2em;
     font-weight: 700;
 }
