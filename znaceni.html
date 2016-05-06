@@ -486,13 +486,23 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <!-- Disabled links in nav (remove for mobile)-->
+    <!-- Disabled links in nav (remove for mobile)-->
     <script>
-        jQuery(document).ready(function($) {
-
-            if ($(window).width() < 768) {
-                $('a').removeClass('disabled');
-            }
-        });
+    jQuery(document).ready(function($) {
+        $a = $('.dropdown-toggle.disabled');
+        if ($(window).width() < 768) {
+            $a.removeClass('disabled');
+        }
+    });
+    </script>
+    <!-- Disabled links in nav (remove for mobile)-->
+    <script>
+    $(window).on('resize', function() {
+        $a = $('.dropdown-toggle.disabled');
+        if ($(window).width() < 768) {
+            $a.removeClass('disabled');
+        }
+    });
     </script>
     <!-- Photogallery -->
     <script>

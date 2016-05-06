@@ -173,56 +173,57 @@
             <hr>
             <p>Základní organizační jednotkou KČT jsou odbory, které se sdružují do 14 oblastí, totožných s hranicemi krajů. Turistické oddíly mládeže jsou sdruženy do <a href="http://www.a-tom.cz">Asociace TOM</a>.</p>
             <div class="hidden-xs col-sm-12 col-md-12 col-lg-12">
-            <!-- Mapa -->
-            <div id="mapa-cr-obrazek">
-                <img alt="Vyberte kraj" src="img/mapa-cr.gif" style="border: 0px solid currentColor;opacity: 0;" usemap="#mapa-cr" />
+                <!-- Mapa -->
+                <div id="mapa-cr-obrazek">
+                    <img alt="Vyberte kraj" src="img/mapa-cr.gif" style="border: 0px solid currentColor;opacity: 0;" usemap="#mapa-cr" />
+                </div>
+                <div id="myTab">
+                    <!-- Tab menu -->
+                    <map name="mapa-cr">
+                        <div class="active">
+                            <area alt="KČT Ještědská oblast" coords="242,59, 235,31, 218,19, 218,9, 200,8, 199,24, 181,27, 165,31, 157,47, 165,62, 181,65, 196,53, 209,56, 209,62" onmouseout="highlight('none');" href="#jestedska-oblast" data-toggle="tab" onmouseover="highlight('107');" shape="poly" title="KČT Ještědská oblast" />
+                        </div>
+                        <area alt="KČT Královéhradeckého kraje" coords="308,94, 307,90, 285,69, 300,56, 290,43, 270,47, 256,34, 238,31, 242,61, 209,65, 210,77, 224,84, 228,90, 228,102, 254,99, 266,97, 279,109, 292,106" href="#kralovehradeckeho-kraje" data-toggle="tab" onmouseout="highlight('none');" onmouseover="highlight('108');" shape="poly" title="KČT Královéhradeckého kraje" />
+                        <area alt="KČT Pardubický kraj" coords="331,90, 319,94, 316,103, 308,100, 290,109, 280,109, 265,97, 229,106, 228,113, 238,124, 235,130, 266,148, 270,141, 297,157, 322,157, 324,142, 319,119, 327,94" href="#pardubicky-kraj" data-toggle="tab" onmouseout="highlight('none');" onmouseover="highlight('109');" shape="poly" title="KČT Pardubický kraj" />
+                        <area alt="KČT Olomoucký kraj" coords="352,188, 401,162, 387,144, 364,137, 348,130, 352,94, 365,90, 365,84, 352,71, 328,65, 324,72, 335,90, 327,94, 319,118, 325,145, 324,157" href="#olomoucky-kraj" onmouseout="highlight('none');" data-toggle="tab" onmouseover="highlight('112');" shape="poly" title="KČT Olomoucký kraj" />
+                        <area alt="KČT oblast Moravskoslezská" coords="439,179, 471,157, 445,117, 407,103, 384,77, 366,82, 365,90, 354,96, 348,128, 366,137, 387,142, 401,157, 404,162, 429,165" href="#oblast-moravskoslezska" onmouseout="highlight('none');" data-toggle="tab" onmouseover="highlight('113');" shape="poly" title="KČT oblast Moravskoslezská" />
+                        <area alt="KČT Valašsko-Chřiby" coords="387,236, 418,209, 423,188, 439,179, 428,165, 401,162, 383,174, 352,189, 353,204, 359,215, 378,224" href="#valassko-chriby" data-toggle="tab" onmouseout="highlight('none');" onmouseover="highlight('114');" shape="poly" title="KČT Valašsko-Chřiby" />
+                        <area alt="KČT Jihomoravská oblast" coords="238,234, 242,228, 251,228, 267,215, 276,220, 290,210, 288,192, 297,184, 297,157, 322,157, 326,165, 351,189, 350,201, 357,215, 377,225, 387,236, 376,240, 354,235, 339,261, 304,244, 297,251" href="#jihomoravska-oblast" data-toggle="tab" onmouseout="highlight('none');" onmouseover="highlight('111');" shape="poly" title="KČT Jihomoravská oblast" />
+                        <area alt="KČT Vysočina" coords="235,130, 266,149, 270,143, 297,160, 297,183, 287,191, 289,210, 276,219, 266,215, 251,228, 242,228, 242,211, 225,205, 225,199, 211,198, 200,191, 196,168, 199,160, 215,160, 218,153, 214,146" href="#vysocina" data-toggle="tab" onmouseout="highlight('none');" onmouseover="highlight('110');" shape="poly" title="KČT Vysočina" />
+                        <area alt="KČT Jihočeského kraje" coords="114,168, 114,190, 94,228, 153,273, 181,267, 201,247, 202,221, 238,233, 242,211, 225,206, 224,199, 210,198, 199,192, 195,168, 184,157, 177,168" href="#jihoceskeho-kraje" data-toggle="tab" onmouseout="highlight('none');" onmouseover="highlight('103');" shape="poly" title="KČT Jihočeského kraje" />
+                        <area alt="KČT Středočeská oblast" coords="149,104, 155,121, 159,124, 177,116, 181,105, 218,84, 227,85, 227,112, 235,121, 235,130, 213,146, 218,153, 215,159, 198,159, 195,165, 184,156, 176,168, 116,168, 114,146, 122,124" href="#stredoceska-oblast" data-toggle="tab" onmouseout="highlight('none');" onmouseover="highlight('102');" shape="poly" title="KČT Středočeská oblast" />
+                        <area alt="KČT Praha" coords="149,104, 167,94, 181,105, 175,117, 156,124" href="#praha" data-toggle="tab" onmouseout="highlight('none');" onmouseover="highlight('101');" shape="poly" title="KČT Praha" />
+                        <area alt="KČT Středočeská oblast" coords="89,109, 134,79, 161,79, 166,65, 181,65, 194,56, 209,56, 208,74, 218,84, 181,104, 166,94, 147,103, 122,124" href="#stredoceska-oblast" data-toggle="tab" onmouseover="highlight('102');" onmouseout="highlight('none');" shape="poly" title="KČT Středočeská oblast" />
+                        <area alt="KČT Plzeňského kraje" coords="30,124, 21,137, 36,175, 52,186, 94,228, 113,189, 112,148, 122,124, 84,109" href="#plzenskeho-kraje" data-toggle="tab" onmouseout="highlight('none');" onmouseover="highlight('104');" shape="poly" title="KČT Plzeňského kraje" />
+                        <area alt="KČT Karlovarský kraj" coords="0,81, 58,65, 80,79, 84,107, 30,124" href="#karlovarsky-kraj" data-toggle="tab" onmouseout="highlight('none');" onmouseover="highlight('105');" shape="poly" title="KČT Karlovarský kraj" />
+                        <area alt="KČT oblast Ústecký kraj" coords="61,65, 154,4, 170,4, 181,25, 163,31, 155,47, 165,65, 155,78, 130,80, 84,109, 81,77" href="#oblast-ustecky-kraj" data-toggle="tab" onmouseout="highlight('none');" onmouseover="highlight('106');" shape="poly" title="KČT oblast Ústecký kraj" />
+                    </map>
+                </div>
             </div>
-            <div id="myTab">
-                <!-- Tab menu -->
-                <map name="mapa-cr">
-                    <div class="active">
-                        <area alt="KČT Ještědská oblast" coords="242,59, 235,31, 218,19, 218,9, 200,8, 199,24, 181,27, 165,31, 157,47, 165,62, 181,65, 196,53, 209,56, 209,62" onmouseout="highlight('none');" href="#jestedska-oblast" data-toggle="tab" onmouseover="highlight('107');" shape="poly" title="KČT Ještědská oblast" />
-                    </div>
-                    <area alt="KČT Královéhradeckého kraje" coords="308,94, 307,90, 285,69, 300,56, 290,43, 270,47, 256,34, 238,31, 242,61, 209,65, 210,77, 224,84, 228,90, 228,102, 254,99, 266,97, 279,109, 292,106" href="#kralovehradeckeho-kraje" data-toggle="tab" onmouseout="highlight('none');" onmouseover="highlight('108');" shape="poly" title="KČT Královéhradeckého kraje" />
-                    <area alt="KČT Pardubický kraj" coords="331,90, 319,94, 316,103, 308,100, 290,109, 280,109, 265,97, 229,106, 228,113, 238,124, 235,130, 266,148, 270,141, 297,157, 322,157, 324,142, 319,119, 327,94" href="#pardubicky-kraj" data-toggle="tab" onmouseout="highlight('none');" onmouseover="highlight('109');" shape="poly" title="KČT Pardubický kraj" />
-                    <area alt="KČT Olomoucký kraj" coords="352,188, 401,162, 387,144, 364,137, 348,130, 352,94, 365,90, 365,84, 352,71, 328,65, 324,72, 335,90, 327,94, 319,118, 325,145, 324,157" href="#olomoucky-kraj" onmouseout="highlight('none');" data-toggle="tab" onmouseover="highlight('112');" shape="poly" title="KČT Olomoucký kraj" />
-                    <area alt="KČT oblast Moravskoslezská" coords="439,179, 471,157, 445,117, 407,103, 384,77, 366,82, 365,90, 354,96, 348,128, 366,137, 387,142, 401,157, 404,162, 429,165" href="#oblast-moravskoslezska" onmouseout="highlight('none');" data-toggle="tab" onmouseover="highlight('113');" shape="poly" title="KČT oblast Moravskoslezská" />
-                    <area alt="KČT Valašsko-Chřiby" coords="387,236, 418,209, 423,188, 439,179, 428,165, 401,162, 383,174, 352,189, 353,204, 359,215, 378,224" href="#valassko-chriby" data-toggle="tab" onmouseout="highlight('none');" onmouseover="highlight('114');" shape="poly" title="KČT Valašsko-Chřiby" />
-                    <area alt="KČT Jihomoravská oblast" coords="238,234, 242,228, 251,228, 267,215, 276,220, 290,210, 288,192, 297,184, 297,157, 322,157, 326,165, 351,189, 350,201, 357,215, 377,225, 387,236, 376,240, 354,235, 339,261, 304,244, 297,251" href="#jihomoravska-oblast" data-toggle="tab" onmouseout="highlight('none');" onmouseover="highlight('111');" shape="poly" title="KČT Jihomoravská oblast" />
-                    <area alt="KČT Vysočina" coords="235,130, 266,149, 270,143, 297,160, 297,183, 287,191, 289,210, 276,219, 266,215, 251,228, 242,228, 242,211, 225,205, 225,199, 211,198, 200,191, 196,168, 199,160, 215,160, 218,153, 214,146" href="#vysocina" data-toggle="tab" onmouseout="highlight('none');" onmouseover="highlight('110');" shape="poly" title="KČT Vysočina" />
-                    <area alt="KČT Jihočeského kraje" coords="114,168, 114,190, 94,228, 153,273, 181,267, 201,247, 202,221, 238,233, 242,211, 225,206, 224,199, 210,198, 199,192, 195,168, 184,157, 177,168" href="#jihoceskeho-kraje" data-toggle="tab" onmouseout="highlight('none');" onmouseover="highlight('103');" shape="poly" title="KČT Jihočeského kraje" />
-                    <area alt="KČT Středočeská oblast" coords="149,104, 155,121, 159,124, 177,116, 181,105, 218,84, 227,85, 227,112, 235,121, 235,130, 213,146, 218,153, 215,159, 198,159, 195,165, 184,156, 176,168, 116,168, 114,146, 122,124" href="#stredoceska-oblast" data-toggle="tab" onmouseout="highlight('none');" onmouseover="highlight('102');" shape="poly" title="KČT Středočeská oblast" />
-                    <area alt="KČT Praha" coords="149,104, 167,94, 181,105, 175,117, 156,124" href="#praha" data-toggle="tab" onmouseout="highlight('none');" onmouseover="highlight('101');" shape="poly" title="KČT Praha" />
-                    <area alt="KČT Středočeská oblast" coords="89,109, 134,79, 161,79, 166,65, 181,65, 194,56, 209,56, 208,74, 218,84, 181,104, 166,94, 147,103, 122,124" href="#stredoceska-oblast" data-toggle="tab" onmouseover="highlight('102');" onmouseout="highlight('none');" shape="poly" title="KČT Středočeská oblast" />
-                    <area alt="KČT Plzeňského kraje" coords="30,124, 21,137, 36,175, 52,186, 94,228, 113,189, 112,148, 122,124, 84,109" href="#plzenskeho-kraje" data-toggle="tab" onmouseout="highlight('none');" onmouseover="highlight('104');" shape="poly" title="KČT Plzeňského kraje" />
-                    <area alt="KČT Karlovarský kraj" coords="0,81, 58,65, 80,79, 84,107, 30,124" href="#karlovarsky-kraj" data-toggle="tab" onmouseout="highlight('none');" onmouseover="highlight('105');" shape="poly" title="KČT Karlovarský kraj" />
-                    <area alt="KČT oblast Ústecký kraj" coords="61,65, 154,4, 170,4, 181,25, 163,31, 155,47, 165,65, 155,78, 130,80, 84,109, 81,77" href="#oblast-ustecky-kraj" data-toggle="tab" onmouseout="highlight('none');" onmouseover="highlight('106');" shape="poly" title="KČT oblast Ústecký kraj" />
-                </map>
-            </div></div>
             <div class="form-group col-xs-12 hidden-sm hidden-md hidden-lg">
                 <div class="dropdown">
-  <button class="btn btn-info btn-lg dropdown-toggle" type="button" id="dropdownMenuOblast" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-    Seznam oblastí
-    <span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenuOblasti">
-    <li><a href="#praha" data-toggle="tab">Praha</a></li>
-    <li><a href="#jestedska-oblast" data-toggle="tab">Ještědská oblast</a></li>
-    <li><a href="#jihoceskeho-kraje" data-toggle="tab">Jihočeského kraje</a></li>
-    <li><a href="#jihomoravska-oblast" data-toggle="tab">Jihomoravská</a></li>
-    <li><a href="#karlovarsky-kraj" data-toggle="tab">Karlovarský kraj</a></li>
-    <li><a href="#kralovehradeckeho-kraje" data-toggle="tab">Královehradeckého kraje</a></li>
-    <li><a href="#oblast-moravskoslezska" data-toggle="tab">Moravskoslezská</a></li>
-    <li><a href="#olomoucky-kraj" data-toggle="tab">Olomoucký kraj</a></li>
-    <li><a href="#pardubicky-kraj" data-toggle="tab">Pardubický kraj</a></li>
-    <li><a href="#plzenskeho-kraje" data-toggle="tab">Plzeňského kraje</a></li>
-    <li><a href="#stredoceska-oblast" data-toggle="tab">Středočeská</a></li>
-    <li><a href="#oblast-ustecky-kraj" data-toggle="tab">Ústecký kraj</a></li>
-    <li><a href="#valassko-chriby" data-toggle="tab">Valašsko-Chřiby</a></li>
-    <li><a href="#vysocina" data-toggle="tab">Vysočina</a></li>
-  </ul>
-</div>
-                                    </div>
+                    <button class="btn btn-info btn-lg dropdown-toggle" type="button" id="dropdownMenuOblast" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Seznam oblastí
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuOblasti">
+                        <li><a href="#praha" data-toggle="tab">Praha</a></li>
+                        <li><a href="#jestedska-oblast" data-toggle="tab">Ještědská oblast</a></li>
+                        <li><a href="#jihoceskeho-kraje" data-toggle="tab">Jihočeského kraje</a></li>
+                        <li><a href="#jihomoravska-oblast" data-toggle="tab">Jihomoravská</a></li>
+                        <li><a href="#karlovarsky-kraj" data-toggle="tab">Karlovarský kraj</a></li>
+                        <li><a href="#kralovehradeckeho-kraje" data-toggle="tab">Královehradeckého kraje</a></li>
+                        <li><a href="#oblast-moravskoslezska" data-toggle="tab">Moravskoslezská</a></li>
+                        <li><a href="#olomoucky-kraj" data-toggle="tab">Olomoucký kraj</a></li>
+                        <li><a href="#pardubicky-kraj" data-toggle="tab">Pardubický kraj</a></li>
+                        <li><a href="#plzenskeho-kraje" data-toggle="tab">Plzeňského kraje</a></li>
+                        <li><a href="#stredoceska-oblast" data-toggle="tab">Středočeská</a></li>
+                        <li><a href="#oblast-ustecky-kraj" data-toggle="tab">Ústecký kraj</a></li>
+                        <li><a href="#valassko-chriby" data-toggle="tab">Valašsko-Chřiby</a></li>
+                        <li><a href="#vysocina" data-toggle="tab">Vysočina</a></li>
+                    </ul>
+                </div>
+            </div>
             <div class="tab-content">
                 <!-- Tab content -->
                 <div class="tab-pane" id="jestedska-oblast">
@@ -3392,12 +3393,21 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- Disabled links in nav (remove for mobile)-->
     <script>
-        jQuery(document).ready(function($) {
-
-            if ($(window).width() < 768) {
-                $('a').removeClass('disabled');
-            }
-        });
+    jQuery(document).ready(function($) {
+        $a = $('.dropdown-toggle.disabled');
+        if ($(window).width() < 768) {
+            $a.removeClass('disabled');
+        }
+    });
+    </script>
+    <!-- Disabled links in nav (remove for mobile)-->
+    <script>
+    $(window).on('resize', function() {
+        $a = $('.dropdown-toggle.disabled');
+        if ($(window).width() < 768) {
+            $a.removeClass('disabled');
+        }
+    });
     </script>
     <!-- Mapa cr -->
     <script>
@@ -3493,7 +3503,7 @@
     });
     </script>
     <!-- Navbar sticky -->
-        <!-- Navbar sticky -->
+    <!-- Navbar sticky -->
     <script>
     $(document).ready(function() {
         if ($(window).width() > 768) {

@@ -926,9 +926,18 @@
     <!-- Disabled links in nav (remove for mobile)-->
     <script>
     jQuery(document).ready(function($) {
-
+        $a = $('.dropdown-toggle.disabled');
         if ($(window).width() < 768) {
-            $('a').removeClass('disabled');
+            $a.removeClass('disabled');
+        }
+    });
+    </script>
+    <!-- Disabled links in nav (remove for mobile)-->
+    <script>
+    $(window).on('resize', function() {
+        $a = $('.dropdown-toggle.disabled');
+        if ($(window).width() < 768) {
+            $a.removeClass('disabled');
         }
     });
     </script>
@@ -997,7 +1006,7 @@
         });
     });
     </script>
-        <!-- Navbar sticky -->
+    <!-- Navbar sticky -->
     <script>
     $(document).ready(function() {
         if ($(window).width() > 768) {
