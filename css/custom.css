@@ -331,13 +331,20 @@ nav.shift ul li a:hover:after {
 
 .heroImg {
     position: relative;
-    background-image: url("../img/4j.jpg");
+    background-image: url("../img/main_heroimg_sm.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: left center;
     height: auto;
     min-height: 498px;
     width: 100%;
+}
+
+@media (min-width: 768px) {
+    .heroImg {
+        background-image: url("../img/4j.jpg");
+        background-position: center center;
+    }
 }
 
 .heroImg h2 {
@@ -359,7 +366,10 @@ nav.shift ul li a:hover:after {
     color: #fff;
     line-height: 1.4;
 }
-.heroImg .start{padding-top:4em;}
+
+.heroImg .start {
+    padding-top: 4em;
+}
 
 .heroImg a {
     color: #fff;
@@ -415,12 +425,16 @@ h4.smallSection {
 
 .eventTip {
     overflow: hidden;
-    height: 16em;
+    height: 20em;
     margin-top: 2em;
 }
-
+@media (min-width: 768px) {
+    .eventTip {
+        height: 16em;
+    }
+}
 .eventTip .imgWrap {
-    height: 16em;
+    height: 100%;
     padding-left: 0;
     max-width: 100%;
     background-repeat: no-repeat;
@@ -802,12 +816,7 @@ a:focus {
     color: black;
 }
 
-.events .filter .saletitle {
-    color: black;
-    font-weight: 700;
-}
-
-.events .filter .saletitle i {
+.events .filter i {
     color: #46D1FF;
 }
 
@@ -1678,30 +1687,63 @@ footer .copyright a:hover {
     margin-top: 2em;
     font-weight: 700;
 }
-.advert{
+
+.advert {
     background-image: url("../img/bezruc.jpg");
     background-size: contain;
-    height:40em;
-    max-width:100%;
+    height: 40em;
+    max-width: 100%;
     background-repeat: no-repeat;
     background-position: center center;
-    margin-bottom:4em;
+    margin-bottom: 4em;
 }
-.signs p{
-    opacity:0.64;
-    margin-bottom:2em;
-    padding-left:1em;
-    border-left:3px solid lightgray;
+
+.signs p {
+    opacity: 0.64;
+    margin-bottom: 2em;
+    padding-left: 1em;
+    border-left: 3px solid lightgray;
 }
-.signs{
-    margin:2em 0;
+
+.signs {
+    margin: 2em 0;
 }
-.signs img{
-    margin-top:1em;
+
+.signs img {
+    margin-top: 1em;
 }
+
 .anchor {
     display: block;
     height: 51px;
     margin-top: -51px;
     visibility: hidden;
+}
+
+.font-weight-normal {
+    font-weight: 400;
+}
+
+.popover {
+    width: 30em;
+    max-width: 100%;
+    border-radius: 0;
+    border: none;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3);
+}
+
+a:focus {
+    outline: none;
+}
+
+.pricing-body ul i {
+    cursor: pointer;
+}
+
+footer .footernav ul li .btn-a {
+    color: white;
+}
+
+footer .footernav ul li .btn-a .fa {
+    color: white;
 }
